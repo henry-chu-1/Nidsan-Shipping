@@ -1,5 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +16,322 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* NAV BAR */
+
+#navigation ul{
+  /* Display/Position */
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  /* Size*/
+    margin-left: 75%;
+    width: 25%;
+  /* Color */
+    background-color: lightblue;
+}
+
+#navigation li {
+  /* Display/Position */
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    z-index: 1;
+  /* Size*/
+    width: 100%;
+  /* Color */
+    border: 1px dashed;
+}
+
+#navigation a{
+  /* Display/Position */
+    display: flex;
+    justify-content: center;
+  /* Size*/
+    width: 90%;
+  /* Color */
+    border-radius: 5px;
+}
+
+#navigation a.current{
+  /* Color */
+    background-color: white;
+}
+
+#navigation a:hover{
+  /* Color */
+    background-color: white;
+}
+
+#navigation a:link, a:visited, a:active {
+  /* Color */
+    color: inherit;
+  /* Font */
+    text-decoration: none;
+}
+
+#navigation span{
+  /* Display/Position */
+    display: flex;
+    justify-content: center;
+}
+
+#header{
+  /* Display/Position */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  /* Size*/
+    padding-top: 1%;
+}
+
+#logo{
+/* Display/Position */
+  position: relative;
+  top: 1vw;
+  left: 1.5vw;
+  z-index: 1;
+/* Size*/
+  margin: 0;
+  padding: 0;
+  width: 15%;
+}
+
+
+/* HOME PAGE */
+
+#home{
+  /* Display/Position */
+    position: absolute;
+    top: 0%;
+}
+
+#coverAndTitle{
+  /* Display/Position */
+    position: relative;
+}
+
+#cover{
+  /* Display/Position */
+    object-position: center top;
+    z-index: -1;
+  /* Size*/
+    width: 100%;
+  
+}
+
+#title{
+  /* Display/Position */
+    position: absolute;
+    top: 10%;
+  /* Size*/
+    width: 100%;
+  /* Font */
+    text-align: center;
+    text-shadow: 0 0 4px white;
+}
+
+#titleFirst{
+  /* Font */
+    font-size: 3vw;
+    font-weight: 100;
+}
+
+#titleSecond{
+  /* Color */
+    color: #B69C5D;
+  /* Font */
+    font-size: 3vw;
+    font-weight: 775;
+}
+
+#titleThird{
+  /* Font */
+    font-size: 1.5vw;
+    font-weight: 450;
+}
+
+#titleFourth{
+  /* Font */
+    font-size: 1.5vw;
+    font-weight: 450;
+}
+
+#InstagramLogo{
+  /* Display/Position */
+    position: absolute;
+    top: 90%;
+    right: 96%;
+}
+
+#instagramLabel{
+  /* Display/Position */
+    position: absolute;
+    top: 91.2%;
+    right: 92%;
+}
+
+#homeBody{
+  /* Size*/
+    margin-left: 15%;
+    width: 70%;
+}
+
+#homeBody ul{
+  /* Display/Position */
+    display: flex;
+    justify-content: space-between;
+  /* Size*/
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#homeBody li {
+  /* Display/Position */
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#ACLLogo {
+  /* Display/Position */
+    position: relative;
+    top: 0.6vw;
+}
+
+.homeLine {
+  /* Size*/
+    height: 1px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  /* Color */
+    background-color: #DBD5BF;
+}
+
+.homeBodyTitle {
+  /* Display/Position */
+    display: flex;
+    justify-content: center;
+  /* Size*/
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  /* Font */ 
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+.homeBodyTitleBullets{
+  /* Display/Position */
+    display: flex;
+    justify-content: center;
+  /* Size*/
+    width: 60%;
+    margin-left: 20%;
+    /* margin-top: 2vh;
+    margin-bottom: 2vh; */
+  /* Font */ 
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#aboutText{
+  /* Display/Position */
+    text-align: center;
+  /* Size*/
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+  /* Font */ 
+    font-size: 1.2vw;
+}
+
+/* FOOTER */
+
+#footer{
+  /* Display/Position */
+    position: relative;
+  /* Color */
+    background-color: #173C53;
+  /* Font */ 
+    font-size: 0.75vw;
+}
+
+#footer ul{
+  /* Display/Position */
+    display: flex;
+    justify-content: space-between;
+  /* Size*/
+    margin-left: 7.5%;
+    width: 85%;
+}
+
+#footer li {
+  /* Display/Position */
+    justify-content: center;
+    list-style-type: none;
+  /* Size*/
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  /* Color */
+    color: white;
+}
+
+.footerTitle{
+  display:flex; 
+  justify-content: center;
+  text-align: center;
+  font-size: 1vw;
+  text-decoration: underline
+}
+
+/**/
+
+
+.center {
+  display:flex; 
+  justify-content: center;
+  text-align: center;
+}
+
+.dropbtn {
+  background-color: lightblue;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: white}
+
+.bolded{
+  font-weight: bold;
 }
