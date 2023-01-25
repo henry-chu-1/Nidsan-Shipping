@@ -27,43 +27,14 @@ function App() {
         <NavBar/>
         <div className = 'pages'>
           <Routes>
-          <Route 
-            path = '/'
-            element = {<Home />}
-          />
-          <Route 
-            path = '/services'
-            element = {<Services />}
-          />
-          <Route 
-            path = 'FAQ'
-            element = {<FAQ />}
-          />
-            {/* <Route 
-              path = '/services'
-              element = {<Services />}
-            />
-            <Route 
-              path = '/network'
-              element = {<Network />}
-            />
-            <Route 
-              path = '/containers'
-              element = {<Containers />}
-            />
-            <Route 
-              path = '/contact'
-              element = {<Contact />}
-            />
-            <Route
-              path = '/tracking'
-              element = {<Tracking 
-                          currentCarrier = {currentCarrier}/>}
-            /> */}
-            <Route
-              path = '*'
-              element = {<Navigate to='/' />}
-            />
+          <Route path = '/' element = {<Home />}/>
+          {/* <Route path = '/tracking' element = {<Tracking />}/> */}
+          <Route path = '/services' element = {<Services />}/>
+          {/* <Route path = 'policies' element = {<Policies />}/> */}
+          <Route path = '/contact' element = {<Contact />}/>
+          <Route path = 'FAQ' element = {<FAQ />}/>
+          {/* <Route path = '/about' element = {<About />}/> */}
+          <Route path = '*' element = {<Navigate to='/' />}/>
           </Routes>
         </div> 
       </BrowserRouter>
