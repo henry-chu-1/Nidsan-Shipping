@@ -1,0 +1,20 @@
+{ 
+    "faqs":[
+        {
+            "question": "Question 1?",
+            "answer": "The difference between the two is the volume that the transported goods take up."
+        },
+        {
+            "question": "Question 2?",
+            "answer": "The difference between the two is the volume that the transported goods take up."
+        },
+        {
+            "question": "Question 3?",
+            "answer": "The difference between the two is the volume that the transported goods take up."
+        },
+        {
+            "question": "Question 4?",
+            "answer": "The difference between the two is the volume that the transported goods take up."
+        }
+    ]
+}

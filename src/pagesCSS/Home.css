@@ -1,0 +1,248 @@
+#home{
+    /* Display/Position */
+      position: absolute;
+      top: 0%;
+  }
+  
+  #coverAndTitle{
+    /* Display/Position */
+      position: relative;
+  }
+  
+  #cover{
+    /* Display/Position */
+      z-index: -1;
+    /* Size*/
+      max-height: 100vh;
+      width: 100%;
+  }
+  
+  #title{
+    /* Display/Position */
+      position: absolute;
+      top: 15%;
+    /* Size*/
+      width: 100%;
+    /* Font */
+      text-align: center;
+      color: #073C52;
+  }
+  
+  #titleFirst{
+    /* Font */
+      font-weight: lighter;
+      font-size: calc(37.5px + 0.6vw);
+      line-height: calc(37.5px + 0.6vw);
+  }
+  
+  #titleSecond{
+    /* Color */
+      color: #BC955B;
+    /* Font */
+      font-style: normal;
+      font-weight: bold;
+      font-size: calc(37.5px + 0.6vw);
+      line-height: calc(37.5px + 0.6vw);
+  }
+  
+  #titleThird{
+    /* Font */
+      font-size: calc(11.875px + 0.6vw);
+      font-weight: 450;
+  }
+  
+  #titleFourth{
+    /* Font */
+      /* font-size: calc(25px + 0.2vw); */
+      font-size: calc(11.875px + 0.6vw);
+      font-weight: 450;
+  }
+  
+  #InstagramLogo{
+    /* Display/Position */
+      position: absolute;
+      top: 90%;
+      right: 96%;
+  }
+  
+  #instagramLabel{
+    /* Display/Position */
+      position: absolute;
+      top: 91.2%;
+      right: 92%;
+  }
+  
+  #homeBody{
+    /* Size*/
+      margin-left: 15%;
+      width: 70%;
+  }
+  
+  #homeBody ul{
+    /* Display/Position */
+      display: flex;
+      justify-content: space-between;
+    /* Size*/
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+  }
+  
+  #homeBody li {
+    /* Display/Position */
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+  }
+  
+  #ACLLogo {
+    /* Display/Position */
+      position: relative;
+      top: 0.6vw;
+  }
+  
+  .homeLine {
+    /* Size*/
+      height: 1px;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+    /* Color */
+      background-color: #DBD5BF;
+  }
+  
+  .homeBodyTitle {
+    /* Display/Position */
+      display: flex;
+      justify-content: center;
+    /* Size*/
+      width: 100%;
+      margin-top: 3vh;
+      margin-bottom: 2vh;
+    /* Font */ 
+      text-align: center;
+      /* font-size: calc(30px + 0.2vw); */
+      font-size: calc(18.75px + 0.6vw);
+      font-weight: 400;
+      line-height: calc(21.25px + 0.6vw);
+  }
+  
+  .homeBodyTitleBullets{
+    /* Display/Position */
+      display: flex;
+      justify-content: center;
+    /* Size*/
+      width: 100%;
+      /* margin-left: 10%; */
+      margin-bottom: 3vh;
+    /* Font */ 
+      text-align: center;
+      /* font-size: calc(30px + 0.2vw); */
+      font-size: calc(18.75px + 0.6vw);
+      font-weight: 400;
+      line-height: calc(21.25px + 0.6vw);
+  }
+  
+  #aboutText{
+    /* Display/Position */
+      text-align: center;
+    /* Size*/
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+    /* Font */ 
+      font-size: calc(10px + 0.6vw);
+      line-height: calc(15px + 0.6vw);
+  }
+
+  #coverSecond{
+    /* Display/Position */
+      z-index: -1;
+    /* Size*/
+      width: 90%;
+      margin-left: 5%;
+  }
+
+  .formTitle {
+    /* Display/Position */
+      display: flex;
+      justify-content: center;
+    /* Size*/
+      width: 100%;
+      /* margin-left: 7.5%; */
+      margin-top: 4vh;
+      margin-bottom: 4vh;
+    /* Font */ 
+      text-align: center;
+      /* font-size: calc(30px + 0.2vw); */
+      font-weight: 400;
+      font-size: calc(18.75px + 0.5vw);
+      line-height: calc(24.375px + 0.5vw);
+  }
+
+  .formTitleRow{
+    /* Display/Position */
+      display: flex;
+      justify-content: space-between;
+    /* Size*/
+      width: 81%;
+      margin-left: 9.5%;
+  }
+  
+  .formInputTitle {
+    /* Display/Position */
+      width: 27%;
+      list-style-type: none;
+      font-size: calc(10px + 0.5vw);
+  }
+
+  .formInputRow{
+    /* Display/Position */
+      display: flex;
+      justify-content: space-between;
+    /* Size*/
+      width: 81%;
+      margin-left: 9.5%;
+  }
+
+  .formInput {
+    /* Display/Position */
+      list-style-type: none;
+      font-size: calc(10px + 0.5vw);
+    /* Size*/
+      width: 27%;
+      margin-bottom: 2vh;
+  }
+
+  .textInput{
+    /* Display/Position */
+    /* Size*/
+      width: 100%;
+    /* Color */
+      background: transparent; 
+      border: none;
+      border-bottom: 1px solid #073C52;
+    /* Font */
+      font-size: calc(10px + 0.5vw);
+  }
+
+  .textInput:focus{
+    /* Display/Position */
+      outline: none;
+  }
+
+  #formSubmitButton{
+    /* Display/Position */
+      justify-content: center;
+    /* Size*/
+      height: 4vh;
+      width: 17%;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      margin-left: 41.5%;
+    /* Color */
+      background: transparent; 
+      border: 1px solid #B0C5D3;
+      color: #B0C5D3;
+    /* Font */
+      font-size: calc(10px + 0.5vw);
+  }

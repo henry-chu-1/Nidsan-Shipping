@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
 
+import FAQ from './pages/FAQ'
+
 import Services from './pages/Services'
 import Network from './pages/Network'
 import Containers from './pages/Containers'
@@ -26,9 +28,17 @@ function App() {
         <div className = 'pages'>
           <Routes>
           <Route 
-              path = '/'
-              element = {<Home />}
-            />
+            path = '/'
+            element = {<Home />}
+          />
+          <Route 
+            path = '/services'
+            element = {<Services />}
+          />
+          <Route 
+            path = 'FAQ'
+            element = {<FAQ />}
+          />
             {/* <Route 
               path = '/services'
               element = {<Services />}
