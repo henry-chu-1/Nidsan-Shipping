@@ -1,7 +1,10 @@
 const NidsanLogoWhite = () => {
 
+    //width 12.5vw height 7vh
+    const width = "15vw";
+    const height = "10vh";
     return(
-        <svg width="12.25vw" height="7vh" viewBox="0 0 160 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 160 92" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_60_178)">
                 <path d="M0.9021 77.3351V51.6863H9.00759L17.8348 67.8417H18.1956L17.6544 64.5385V51.6863H24.3164V77.3351H16.2109L7.38371 61.1797H7.00897L7.55026 64.4829V77.3351H0.9021Z" fill="#F6F6F6"/>
                 <path d="M32.6162 77.3351V59.4309H39.2782V77.3351H32.6162Z" fill="#F6F6F6"/>

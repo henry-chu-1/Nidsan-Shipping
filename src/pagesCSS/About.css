@@ -1,8 +1,8 @@
-#faqPage{
+#aboutPage{
     text-align: center;
 }
 
-#faqPageTitle{
+#aboutPageTitle{
     /* Font */
         font-weight: lighter;
         font-size: calc(37.5px + 0.6vw);

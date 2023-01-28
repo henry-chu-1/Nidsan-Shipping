@@ -14,6 +14,9 @@ import HapagLloyd from '../images/HapagLloyd.js';
 import OOCL from '../images/OOCL.js';
 import CMA from '../images/CMA.js';
 
+//SOCIAL LOGOS
+import FacebookLogo from '../images/Facebook.js';
+import FacebookText from '../images/FacebookText';
 import InstagramLogo from '../images/Instagram.js';
 import InstagramText from '../images/instagramText.js';
 
@@ -42,10 +45,15 @@ const Home = () =>{
                     <h2 id = 'titleThird'>FREIGHT FORWARDER'S OFFERING PREMIUM LOGISTIC SERVICES</h2>
                     <h2 id = 'titleFourth'>FOR EXPORTER'S WORLDWIDE</h2>
                 </div>
-                <a href = 'https://www.instagram.com/nidsanshipping/' target = '_blank' rel = 'noreferrer'>
-                    <InstagramLogo/>
-                    <InstagramText/>
-                </a>
+                <div>
+                    <a id = 'facebook' href = 'https://www.facebook.com/nidsanshipping?mibextid=LQQJ4d' target = '_blank' rel = 'noreferrer'>
+                        <FacebookLogo/>
+                    </a>
+                    <a id = 'instagram' href = 'https://www.instagram.com/nidsanshipping/' target = '_blank' rel = 'noreferrer'>
+                        <InstagramLogo/>
+                        <InstagramText/>
+                    </a>
+                </div>
             </div>
             <div id = 'homeBody'>
                 <hr className = 'homeLine' />
@@ -90,28 +98,34 @@ const Home = () =>{
             </div>
             <img id = 'coverSecond' src = {coverSecond} alt = ''/>
             <div id = 'homeForm'>
-                <h3 className = 'formTitle'> {formTitleText} </h3>
-                <ul className = 'formTitleRow'>
-                    <li className = 'formInputTitle'>OWNER/COMPANY NAME:</li>
-                    <li className = 'formInputTitle'>EMAIL:</li>
-                    <li className = 'formInputTitle'>CONTACT NUMBER:</li>
+                <div id = 'formRows'>
+                    <h3 className = 'formTitle'> {formTitleText} </h3>
+                    <ul className = 'formTitleRow'>
+                        <li className = 'formInputTitle'>OWNER/COMPANY NAME:</li>
+                        <li className = 'formInputTitle'>EMAIL:</li>
+                        <li className = 'formInputTitle'>CONTACT NUMBER:</li>
+                    </ul>
+                    <ul className = 'formInputRow'>
+                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
+                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
+                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
+                    </ul>
+                    <hr id = 'formRowSeperator'></hr>
+                    <ul className = 'formTitleRow'>
+                        <li className = 'formInputTitle'>ADDRESS:</li>
+                        <li className = 'formInputTitle'>CITY:</li>
+                        <li className = 'formInputTitle'>COUNTRY:</li>
+                    </ul>
+                    <ul className = 'formInputRow'>
+                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
+                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
+                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
+                    </ul>
+                </div>
+                <ul id = 'formSubmitRow'>
+                    <li className = 'formSubmitRowItem'><p id = 'termsAndConditions'>TERMS AND CONDITIONS</p></li>
+                    <li className = 'formSubmitRowItem'><button id = 'formSubmitButton'>SUBMIT</button></li>
                 </ul>
-                <ul className = 'formInputRow'>
-                    <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                    <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                    <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                </ul>
-                <ul className = 'formTitleRow'>
-                    <li className = 'formInputTitle'>ADDRESS:</li>
-                    <li className = 'formInputTitle'>CITY:</li>
-                    <li className = 'formInputTitle'>COUNTRY:</li>
-                </ul>
-                <ul className = 'formInputRow'>
-                    <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                    <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                    <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                </ul>
-                <button id = 'formSubmitButton'>SUBMIT</button>
             </div>
             <Footer footerClass = {'footer'}/>
         </div>

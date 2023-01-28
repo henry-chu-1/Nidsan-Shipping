@@ -1,9 +1,38 @@
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./font/TT-FrisNeue/TTFirsNeue-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Thin';
+  src: url('./font/TT-FrisNeue/TTFirsNeue-Thin.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Bold';
+  src: url('./font/TT-FrisNeue/TTFirsNeue-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue LT Std';
+  /* src: url('./font/Helvetica-Neue-LT-Std/HelveticaNeueLTStd-Bd.otf'); */
+  src: url('./font/Helvetica-Neue-LT-Std/HelveticaNeueLTStd-Cn.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   margin: 0;
   padding: 0;
   font-family: 'TT Firs Neue';
   color: #073C52;
-  /* background: #D6E5E8; */
+  /* outline: red solid 1px; */
 }
 
 body {
@@ -24,6 +53,13 @@ code {
 
 
 /* NAV BAR */
+#navBarPageStack{
+  display: grid;
+}
+
+#navBarPageStack > *{
+  grid-area: 1 / 1;
+}
 
 #navigation ul{
   /* Display/Position */
@@ -112,8 +148,12 @@ code {
   /* Color */
     background-color: #173C53;
   /* Font */ 
-    font-family: 'Helvetica Neue LT Std';
     font-size: calc(9px + 0.5vw);
+    line-height: calc(16.8​75px + 0.5vh);
+}
+
+.footer a{
+  text-decoration: none;
 }
 
 .footer ul{
@@ -121,8 +161,8 @@ code {
     display: flex;
     justify-content: space-between;
   /* Size*/
-    margin-left: 5%;
-    width: 90%;
+    width: 80%;
+    margin-left: 10%;
 }
 
 .footer li {
@@ -132,27 +172,37 @@ code {
   /* Size*/
     margin-top: 2vh;
     margin-bottom: 2vh;
-  /* Color */
-    color: white;
 }
 
-.footerTitle{
-  display:flex; 
-  justify-content: center;
-  text-align: center;
-  text-decoration: underline;
-  /* Color */
-    color: white;
-  /* Font */ 
-    line-height: calc(18.75px + 0.5vw);;
+#footerBox{
+  /* Size*/
+    padding-bottom: 4vh;
 }
 
 .footerText {
-  display:flex; 
-  justify-content: center;
-  text-align: center;
+  /* Display/Position */
+    display:flex; 
+  /* Size*/
+    margin-bottom: 1vh;
   /* Color */
-    color: white;
+    font-family: 'Helvetica Neue LT Std';
+    /* font-weight: lighter; */
+    color: #D6E5E8;
+}
+
+#footerCopyrightText{
+  /* Display/Position */
+    position: absolute;
+    bottom: 0.33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  /* Color */
+    color: #D6E5E8;
+
+  /* Font */
+    font-family: 'Helvetica Neue LT Std';
+    font-size: calc(6.75px + 0.5vw);
+    text-align: center;
 }
 
 /**/

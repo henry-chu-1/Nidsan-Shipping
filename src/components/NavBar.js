@@ -5,9 +5,6 @@ const NavBar = (props) => {
 
     return(
         <div id = 'header'>
-            {/* <img id = 'logo' src = {logo}/> */}
-            {/* <img id = 'logo' src = {logo1}/> */}
-            {/* <img id = 'logo' src = {logo2}/> */}
             <Link
                 className = {props.currentPage === 'home' ? 'current' : 'inactive'}
                 to= '/' 

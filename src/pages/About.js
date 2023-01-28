@@ -1,14 +1,14 @@
-import '../pagesCSS/FAQ.css';
+import '../pagesCSS/About.css';
 
 import Footer from '../components/Footer';
 
 import faq from '../jsonFiles/FAQ.json' 
 
-const FAQ = () =>{
+const About = () =>{
 
     return(
-        <div id = 'faqPage'>
-            <h1 id = 'faqPageTitle'>FAQ</h1>
+        <div id = 'aboutPage'>
+            <h1 id = 'aboutPageTitle'>FAQ</h1>
             {
                 faq.faqs.map((faq) => 
                 <div className = "faq">
@@ -21,4 +21,4 @@ const FAQ = () =>{
     )
 }
 
-export default FAQ
+export default About

@@ -1,12 +1,15 @@
-#home{
-    /* Display/Position */
-      position: absolute;
-      top: 0%;
-  }
+*{
+  /* outline: red solid 1px; */
+}
   
   #coverAndTitle{
     /* Display/Position */
+      display: grid;
       position: relative;
+  }
+
+  #coverAndTitle > *{
+    grid-area: 1 / 1;
   }
   
   #cover{
@@ -19,10 +22,11 @@
   
   #title{
     /* Display/Position */
-      position: absolute;
-      top: 15%;
+      position: relative;
+      top: 16%;
     /* Size*/
       width: 100%;
+      height: 85%;
     /* Font */
       text-align: center;
       color: #073C52;
@@ -30,7 +34,8 @@
   
   #titleFirst{
     /* Font */
-      font-weight: lighter;
+      font-family: 'TT Firs Neue Thin';
+      font-weight: 250;
       font-size: calc(37.5px + 0.6vw);
       line-height: calc(37.5px + 0.6vw);
   }
@@ -39,8 +44,8 @@
     /* Color */
       color: #BC955B;
     /* Font */
-      font-style: normal;
-      font-weight: bold;
+      font-family: 'TT Firs Neue Bold';
+      /* font-weight: 1000; */
       font-size: calc(37.5px + 0.6vw);
       line-height: calc(37.5px + 0.6vw);
   }
@@ -53,11 +58,17 @@
   
   #titleFourth{
     /* Font */
-      /* font-size: calc(25px + 0.2vw); */
       font-size: calc(11.875px + 0.6vw);
       font-weight: 450;
   }
-  
+
+  #FacebookLogo{
+    /* Display/Position */
+    position: absolute;
+    top: 85%;
+    right: 96%;
+  }
+
   #InstagramLogo{
     /* Display/Position */
       position: absolute;
@@ -73,9 +84,15 @@
   }
   
   #homeBody{
+    /* Display/Position */
+      
     /* Size*/
+      margin-top: 3vh;
+      margin-bottom: 5vh;
       margin-left: 15%;
       width: 70%;
+
+      /* outline: red solid 3px; */
   }
   
   #homeBody ul{
@@ -117,7 +134,7 @@
       justify-content: center;
     /* Size*/
       width: 100%;
-      margin-top: 3vh;
+      margin-top: 5vh;
       margin-bottom: 2vh;
     /* Font */ 
       text-align: center;
@@ -162,19 +179,20 @@
       margin-left: 5%;
   }
 
+  #homeForm{
+    /* Display/Position */
+      margin-top: 7vh;
+      margin-bottom: 5vh;
+  }
+
   .formTitle {
     /* Display/Position */
-      display: flex;
-      justify-content: center;
     /* Size*/
-      width: 100%;
-      /* margin-left: 7.5%; */
-      margin-top: 4vh;
-      margin-bottom: 4vh;
+      margin-bottom: 8vh;
     /* Font */ 
       text-align: center;
       /* font-size: calc(30px + 0.2vw); */
-      font-weight: 400;
+      font-weight: lighter;
       font-size: calc(18.75px + 0.5vw);
       line-height: calc(24.375px + 0.5vw);
   }
@@ -185,6 +203,7 @@
       justify-content: space-between;
     /* Size*/
       width: 81%;
+      margin-top: 1vh;
       margin-left: 9.5%;
   }
   
@@ -193,6 +212,8 @@
       width: 27%;
       list-style-type: none;
       font-size: calc(10px + 0.5vw);
+
+      /* outline: red solid 3px; */
   }
 
   .formInputRow{
@@ -213,6 +234,13 @@
       margin-bottom: 2vh;
   }
 
+  #formRowSeperator{
+    /* Display/Position */
+      opacity: 0;
+    /* Size*/ 
+      height: 8vh;
+  }
+
   .textInput{
     /* Display/Position */
     /* Size*/
@@ -230,15 +258,42 @@
       outline: none;
   }
 
+  #formSubmitRow{
+    /* Display/Position */
+      display: grid;
+    /* Size*/
+      margin-top: 5vh;
+  }
+
+#formSubmitRow li:nth-child(1){
+  /* Display/Position */
+    list-style-type: none;
+    align-self: center;
+    grid-area: 1 / 1;
+  /* Size*/
+    margin-right: 1.5vw;
+}
+
+#formSubmitRow li:nth-child(2){
+  /* Display/Position */
+    list-style-type: none;
+    grid-area: 1 / 2;
+  /* Size*/
+    margin-left: 1.5vw;
+}
+
+#termsAndConditions{
+  /* Font */
+    font-size: calc(10px + 0.5vw);
+    text-align: right;
+}
   #formSubmitButton{
     /* Display/Position */
+      /* display: absolute; */
       justify-content: center;
     /* Size*/
       height: 4vh;
-      width: 17%;
-      margin-top: 2vh;
-      margin-bottom: 2vh;
-      margin-left: 41.5%;
+      width: 16vw;
     /* Color */
       background: transparent; 
       border: 1px solid #B0C5D3;
