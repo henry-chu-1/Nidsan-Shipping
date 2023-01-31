@@ -19,16 +19,17 @@
     /* Size*/
       max-height: 100vh;
       width: 100%;
-
     /* Animation */
       animation-name: zoomOutCover;
-      animation-duration: 3s;
+      animation-duration: 5s;
+      animation-timing-function: ease-out;
   }
 
   @keyframes zoomOutCover{
     from{
-      transform-origin: top center;
-      transform: scale(3,3);
+      transform-origin: 50% 40%;
+      /* transform-origin: top center; */
+      transform: scale(4,4);
     }
     to{
       transform :scale(1,1);
@@ -60,7 +61,6 @@
       color: #BC955B;
     /* Font */
       font-family: 'TT Firs Neue Bold';
-      /* font-weight: 1000; */
       font-size: calc(37.5px + 0.6vw);
       line-height: calc(37.5px + 0.6vw);
   }
@@ -79,26 +79,31 @@
 
   #FacebookLogo{
     /* Display/Position */
-    position: absolute;
-    top: 85%;
-    left: 2%;
+      position: absolute;
+      top: 85%;
+      left: 2%;
+    /* Animation */
+      transition: transform 350ms ease;
   }
 
   #FacebookText{
     /* Display/Position */
       position: absolute;
-      top: 84.25%;
+      top: 85%;
       left: 4%;
+    /* Animation */
+      transition: transform 350ms ease;
+      /* outline: red solid 1px; */
   }
 
   #facebook:hover > #FacebookLogo{
-    transform: scale(1.2);
-    transition: 1s;
+    transform: scale(1.3);
+    transition-duration: 1000ms;
   }
 
   #facebook:hover > #FacebookText{
-    transform: translateX(5%);
-    transition: 1s;
+    transform: translateX(20%) scale(1.3);
+    transition-duration: 1000ms;
   }
 
   #InstagramLogo{
@@ -106,23 +111,28 @@
       position: absolute;
       top: 90%;
       left: 2%;
+    /* Animation */
+      transition: transform 350ms ease;
   }
   
   #InstagramText{
     /* Display/Position */
       position: absolute;
       top: 91.2%;
-      left: 4.25%;
+      left: 4.3%;
+    /* Animation */
+      transition: transform 350ms ease;
+      /* outline: red solid 1px; */
   }
 
   #instagram:hover > #InstagramLogo{
-    transform: scale(1.2);
-    transition: 1s;
+    transform: scale(1.3);
+    transition-duration: 1000ms;
   }
 
   #instagram:hover > #InstagramText{
-    transform: translateX(5%);
-    transition: 1s;
+    transform: translateX(25%) scale(1.3);
+    transition-duration: 1000ms;
   }
 
   #homeBody{

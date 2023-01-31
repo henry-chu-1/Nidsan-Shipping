@@ -2,6 +2,8 @@ const instagramText = () => {
 
 	return(
 		<svg id="InstagramText" 
+				// width = '3.52vw' 
+				// height = '1vw' 
 				width = '3.52vw' 
 				height = '1vw' 
 				xmlns="http://www.w3.org/2000/svg"  
