@@ -6,6 +6,7 @@
     /* Display/Position */
       display: grid;
       position: relative;
+      overflow: hidden;
   }
 
   #coverAndTitle > *{
@@ -18,6 +19,20 @@
     /* Size*/
       max-height: 100vh;
       width: 100%;
+
+    /* Animation */
+      animation-name: zoomOutCover;
+      animation-duration: 3s;
+  }
+
+  @keyframes zoomOutCover{
+    from{
+      transform-origin: top center;
+      transform: scale(3,3);
+    }
+    to{
+      transform :scale(1,1);
+    }
   }
   
   #title{
@@ -66,23 +81,50 @@
     /* Display/Position */
     position: absolute;
     top: 85%;
-    right: 96%;
+    left: 2%;
+  }
+
+  #FacebookText{
+    /* Display/Position */
+      position: absolute;
+      top: 84.25%;
+      left: 4%;
+  }
+
+  #facebook:hover > #FacebookLogo{
+    transform: scale(1.2);
+    transition: 1s;
+  }
+
+  #facebook:hover > #FacebookText{
+    transform: translateX(5%);
+    transition: 1s;
   }
 
   #InstagramLogo{
     /* Display/Position */
       position: absolute;
       top: 90%;
-      right: 96%;
+      left: 2%;
   }
   
-  #instagramLabel{
+  #InstagramText{
     /* Display/Position */
       position: absolute;
       top: 91.2%;
-      right: 92%;
+      left: 4.25%;
   }
-  
+
+  #instagram:hover > #InstagramLogo{
+    transform: scale(1.2);
+    transition: 1s;
+  }
+
+  #instagram:hover > #InstagramText{
+    transform: translateX(5%);
+    transition: 1s;
+  }
+
   #homeBody{
     /* Display/Position */
       

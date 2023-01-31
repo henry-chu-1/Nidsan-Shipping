@@ -18,7 +18,7 @@ import CMA from '../images/CMA.js';
 import FacebookLogo from '../images/Facebook.js';
 import FacebookText from '../images/FacebookText';
 import InstagramLogo from '../images/Instagram.js';
-import InstagramText from '../images/instagramText.js';
+import InstagramText from '../images/InstagramText.js';
 
 const Home = () =>{
 
@@ -48,6 +48,7 @@ const Home = () =>{
                 <div>
                     <a id = 'facebook' href = 'https://www.facebook.com/nidsanshipping?mibextid=LQQJ4d' target = '_blank' rel = 'noreferrer'>
                         <FacebookLogo/>
+                        <FacebookText/>
                     </a>
                     <a id = 'instagram' href = 'https://www.instagram.com/nidsanshipping/' target = '_blank' rel = 'noreferrer'>
                         <InstagramLogo/>
