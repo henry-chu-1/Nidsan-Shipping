@@ -1,7 +1,7 @@
 const NidsanLogo = () => {
-
+    //width="8.75vw" height="5vw"
     return(
-    <svg id = "logo" width="8.75vw" height="5vw" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg id = "logo" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0_60_136)">
             <path d="M0.731689 67.7768V45.2701H7.82469L15.5501 59.4065H15.8725L15.4013 56.5049V45.2701H21.2295V67.7768H14.1365L6.41105 53.6404H6.08865L6.57227 56.5297V67.7768H0.731689Z" fill="#063B53"/>
             <path d="M28.5332 67.7768V52.0408H34.3614V67.7768H28.5332Z" fill="#063B53"/>

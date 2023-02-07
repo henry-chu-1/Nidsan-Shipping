@@ -30,7 +30,7 @@ const Footer = (props) => {
                 <div id = 'footerContactInfo'>
                     <div id = 'footerEmail' className = 'footerText' onClick = {openEmail}>
                             <FooterEmailLogo/>&nbsp; EMAIL: EXPORTS@NIDSANSHIPPING.COM</div>
-                    <p className = 'footerText'><FooterPhoneLogo/>&nbsp; +1 (855) 678-0750</p>
+                    <p id = 'footerPhone' className = 'footerText'><FooterPhoneLogo/>&nbsp; +1 (855) 678-0750</p>
                 </div>
                 <div id = 'footerSocialLinks'>
                     <a href = 'https://www.instagram.com/nidsanshipping/' target = '_blank' rel = 'noreferrer'>

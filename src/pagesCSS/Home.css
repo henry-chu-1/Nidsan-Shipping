@@ -6,6 +6,7 @@
     /* Display/Position */
       display: grid;
       position: relative;
+      max-height: 100vh;
       overflow: hidden;
   }
 
@@ -15,11 +16,15 @@
   
   #cover{
     /* Display/Position */
-      z-index: -1;
+      z-index: -2;
+      overflow: hidden;
+      justify-self: center;
     /* Size*/
-      max-height: 100vh;
-      width: 100%;
+      min-height: 125%;
+      width: auto;
+      min-width: 100%;
     /* Animation */
+      transform: translateY(-20%);
       animation-name: zoomOutCover;
       animation-duration: 5s;
       animation-timing-function: ease-in-out;
@@ -27,18 +32,18 @@
 
   @keyframes zoomOutCover{
     from{
-      transform-origin: 55% 40%;
-      transform: scale(3.5,3.5);
+      transform-origin: 60% 68%;
+      transform: scale(3,3);
     }
     to{
-      transform :scale(1,1);
+      transform: scale(1,1) translateY(-20%);
     }
   }
   
   #title{
     /* Display/Position */
-      position: relative;
-      top: 16%;
+      position: absolute;
+      top: 25%;
     /* Size*/
       width: 100%;
       height: 85%;
@@ -50,9 +55,16 @@
   #titleFirst{
     /* Font */
       font-family: 'TT Firs Neue Thin';
-      font-weight: 250;
-      font-size: calc(37.5px + 0.6vw);
-      line-height: calc(37.5px + 0.6vw);
+      font-weight: 300;
+
+      /* font-size: calc(37.5px + 0.6vw);
+      line-height: calc(37.5px + 0.6vw); */
+      
+      /* font-size: 60px;
+      line-height: 60px; */
+
+      font-size: calc(60px + 0.2vw);
+      line-height: calc(60px + 0.2vw);
   }
   
   #titleSecond{
@@ -60,139 +72,144 @@
       color: #BC955B;
     /* Font */
       font-family: 'TT Firs Neue Bold';
-      font-size: calc(37.5px + 0.6vw);
-      line-height: calc(37.5px + 0.6vw);
+      /* font-size: calc(37.5px + 0.6vw);
+      line-height: calc(37.5px + 0.6vw); */
+
+      /* font-size: 60px;
+      line-height: 60px; */
+
+      font-size: calc(60px + 0.2vw);
+      line-height: calc(60px + 0.2vw);
   }
   
   #titleThird{
     /* Font */
-      font-size: calc(11.875px + 0.6vw);
+      /* font-size: calc(11.875px + 0.6vw); */
       font-weight: 450;
+
+      font-size: calc(19px + 0.2vw);
+      line-height: calc(24.51px + 0.2vw);
+      
   }
   
   #titleFourth{
     /* Font */
-      font-size: calc(11.875px + 0.6vw);
+      /* font-size: calc(11.875px + 0.6vw); */
       font-weight: 450;
+
+      font-size: calc(19px + 0.2vw);
+      line-height: calc(24.51px + 0.2vw);
+  }
+
+  #titleReadMoreButton{
+    /* Display/Position */
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+    /* Size*/
+    height: 6vh;
+    width: 14vw;
+    margin-top: 3.2vh;
+    /* Color */
+    border: 2px solid #BC955B;
+    color: #073C52;
+    background-color: transparent;
+    /* Font */
+    letter-spacing: 3px;
+    font-size: calc(12px + 0.2vw);
+    font-weight: bold;
   }
 
   #homeSocialLogoGrid{
     display: grid;
     position: absolute;
-    width: 5%;
-    top: 85%;
-    left: 2%;
-    gap: 5%;
-    grid-template-rows: 70%;
+    /* width: 5%; */
+    top: 91.6%;
+    /* left: 2%; */
+    left: 4.2%;
+    gap: 1.5vh;
+
   }
 
   #facebook{
     display: grid;
     grid-area: 1/1;
-    grid-template-columns: 15%;
     align-self: center;
   }
 
   #FacebookLogo{
     /* Display/Position */
-      grid-area: 1/1;
-      justify-self: center;
+    grid-area: 1/1;
+    justify-self: center;
+    /* Size */
+    height: 18.03px;
+    width: 18.03px;
     /* Animation */
-      transition: transform 350ms ease;
+    transition: transform 350ms ease;
+
   }
 
-  #FacebookText{
-    /* Display/Position */
-      grid-area: 1/2;
-      justify-self: center;
-    /* Animation */
-      transition: transform 350ms ease;
-  }
-
-  #facebook:hover > #FacebookLogo{
-    transform: translateX(20%) scale(1.3);
-    transition-duration: 500ms;
-  }
-
-  #facebook:hover > #FacebookText{
-    transform: translateX(30%) scale(1.3);
+  #FacebookLogo:hover{
+    /* transform: translateX(20%) scale(1.3); */
+    transform: scale(2);
     transition-duration: 500ms;
   }
 
   #instagram{
     display: grid;
     grid-area: 2/1;
-    grid-template-columns: 15%;
     align-self: center;
   }
 
   #InstagramLogo{
     /* Display/Position */
-      grid-area: 1/1;
-      justify-self: center;
+    grid-area: 1/1;
+    justify-self: center;
+    /* Size */
+    height: 18.03px;
+    width: 18.03px;
     /* Animation */
-      transition: transform 350ms ease;
-  }
-  
-  #InstagramText{
-    /* Display/Position */
-      /* position: absolute;
-      top: 91.2%;
-      left: 4.3%; */
-      grid-area: 1/2;
-      align-self: center;
-      justify-self: center;
-    /* Animation */
-      transition: transform 350ms ease;
+    transition: transform 350ms ease;
   }
 
-  #instagram:hover > #InstagramLogo{
-    transform: translateX(20%) scale(1.3);
+  #InstagramLogo:hover{
+    transform: scale(2);
     transition-duration: 500ms;
   }
-
-  #instagram:hover > #InstagramText{
-    transform: translateX(35%) scale(1.3);
-    transition-duration: 500ms;
-  }
-
-  #homeBody{
-    /* Display/Position */
-      
-    /* Size*/
-      margin-top: 3vh;
-      margin-bottom: 5vh;
-      margin-left: 15%;
-      width: 70%;
-  }
   
-  .homeLine {
-    /* Size*/
-      height: 2px;
-      margin-top: 2vh;
-      margin-bottom: 2vh;
-    /* Color */
-      background-color: #DBD5BF;
-  }
-
   #homeLogosWrapper{
     /* Display/Position */
     display: grid;
     margin: auto;
-    margin-top: 3vh;
+    margin-top: 3.29vh;
     /* Size */
-    width: 60%;
+    width: 62.5vw;
+  }
+
+  .homeLine {
+    /* Size*/
+      height: 2px;
+    /* Color */
+      background-color: #DBD5BF;
   }
 
   #homeLogos{
     /* Display/Position */
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    /* Size*/
     width: 100%;
+    margin-top: 1.87vh;
+    margin-bottom: 1.87%;
     justify-self: center;
   }
 
   #MaerskLogo{
+    /* Size*/
+    height: 98.3px;
+    width: 111.11px;
+    /* Animation */
     transform: scale(1);
     transition: transform 350ms ease;
   }
@@ -203,25 +220,37 @@
   }
 
   #ACLLogo{
-    transform: scale(0.85) translate(0, 0.75vw);
+    /* Size*/
+    height: 67.5px;
+    width: 120px;
+
+    /* Animation */
+    transform: scale(0.85);
     transition: transform 350ms ease;
   }
 
   #ACLLogo:hover {
-    transform: scale(1.05) translate(0, 0.75vw);
+    transform: scale(1.05);
     transition-duration: 300ms;
   }
 
   #MSCLogo{
+    height: 89.02px;
+    width: 100px;
     transition: transform 350ms ease;
   }
 
   #MSCLogo:hover{
+    
     transform: scale(1.2);
     transition-duration: 300ms;
   }
 
   #CMALogo{
+    /* Size*/
+    height: 112.95px;
+    width: 143.54px;
+    /* Animation */
     transition: transform 350ms ease;
   }
 
@@ -230,20 +259,27 @@
     transition-duration: 300ms;
   }
 
+  #homeBody{
+    /* Display/Position */
+      
+    /* Size*/
+      margin: auto;
+      margin-top: 4.88vh;
+      width: 62.5vw;
+  }
+
   .homeBodyTitle {
     /* Display/Position */
       display: flex;
       justify-content: center;
     /* Size*/
-      width: 100%;
-      margin-top: 5vh;
-      margin-bottom: 2vh;
     /* Font */ 
       text-align: center;
-      /* font-size: calc(30px + 0.2vw); */
-      font-size: calc(18.75px + 0.6vw);
       font-weight: 400;
-      line-height: calc(21.25px + 0.6vw);
+      /* font-size: calc(30px + 0.2vw); */
+
+      font-size: calc(30px + 0.2vw);
+      line-height: calc(34px + 0.2vw);
   }
   
   .homeBodyTitleBullets{
@@ -251,61 +287,72 @@
       display: flex;
       justify-content: center;
     /* Size*/
-      width: 100%;
-      /* margin-left: 10%; */
-      margin-bottom: 3vh;
     /* Font */ 
       text-align: center;
-      /* font-size: calc(30px + 0.2vw); */
-      font-size: calc(18.75px + 0.6vw);
       font-weight: 400;
-      line-height: calc(21.25px + 0.6vw);
+      /* font-size: calc(30px + 0.2vw); */
+
+      font-size: calc(30px + 0.2vw);
+      line-height: calc(34px + 0.2vw);
   }
   
   #aboutText{
     /* Display/Position */
       text-align: center;
     /* Size*/
-      margin-top: 2vh;
-      margin-bottom: 2vh;
+      margin-top: 2.71vh;
     /* Font */ 
-      font-size: calc(10px + 0.6vw);
-      line-height: calc(15px + 0.6vw);
+      /* font-size: calc(10px + 0.6vw);
+      line-height: calc(15px + 0.6vw); */
+      font-size: calc(16px + 0.2vw);
+      line-height: calc(24px + 0.2vw);  
   }
 
   #coverSecond{
     /* Display/Position */
+    position: relative;
       z-index: -1;
     /* Size*/
-      width: 90%;
-      margin-left: 5%;
+      width: 92.15vw;
+      margin-top: 4.88vh;
+      margin-left: 3.925vw;
   }
 
   #homeForm{
     /* Display/Position */
-      margin-top: 7vh;
-      margin-bottom: 5vh;
+    width: 80vw;
+    margin-top: 7vh;
+    margin-left: 10vw;
   }
 
   #formTitle {
     /* Size*/
-      margin-bottom: 8vh;
+      /* margin-bottom: 8vh; */
     /* Font */ 
       text-align: center;
       font-weight: lighter;
-      font-size: calc(18.75px + 0.5vw);
-      line-height: calc(24.375px + 0.5vw);
+      /* font-size: calc(18.75px + 0.5vw);
+      line-height: calc(24.375px + 0.5vw); */
+
+      font-size: calc(30px + 0.2vw);
+      line-height: calc(38.7px + 0.2vw);
   }
 
   #formInputGrid{
     /* Display/Position */
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 5vw;
+      gap: 9.67vh;
     /* Size*/
-      width: 80%;
       margin: auto;
-      font-size: calc(10px + 0.5vw);
+      margin-top: 9.67vh;
+      /* font-size: calc(10px + 0.5vw); */
+
+      font-size: calc(16px + 0.2vw);
+  }
+
+  .formInputCard{
+    line-height: calc(40px + 0.2vw);
   }
 
   .textInput{
@@ -332,12 +379,15 @@
     /* Display/Position */
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1vw;
+      gap: 2vw;
     /* Size*/
-      margin-top: 8vh;
-      margin-bottom: 8vh;
+      margin-top: 11vh;
+      margin-bottom: 8.7vh;
     /* Font */
-      font-size: calc(10px + 0.5vw);
+      /* font-size: calc(10px + 0.5vw); */
+
+      font-size: calc(20.38px + 0.2vw);
+      line-height: calc(26.26px + 0.2vw);
   }
 
 #termsAndConditions{
@@ -351,17 +401,16 @@
       justify-content: center;
       z-index: 1;
     /* Size*/
-      height: 4vh;
-      width: 16vw;
+      height: 6vh;
+      width: 14vw;
     /* Color */
-      /* border: 1px solid #073C52; */
       border: 2px solid #B0C5D3;
       color: #B0C5D3;
     /* Font */
-      font-size: calc(10px + 0.5vw);
+      font-size: calc(21.65px + 0.2vw);
       font-weight: bold;
       transition: ease-out 0.3s;
-      background-color: #E5E5E5;  
+      background-color: linear-gradient(0deg, rgba(214, 229, 232, 0.2), rgba(214, 229, 232, 0.2));  
   }
 
   #formSubmitButton:hover{
@@ -486,22 +535,8 @@
       transform : scale(3,3);
   }
 
-  #FacebookText{
-    /* Display/Position */
-      grid-area: 1/2;
-      justify-self: center;
-    /* Animation */
-      transition: transform 350ms ease;
-      transform : scale(3,3);
-  }
-
   #facebook:hover > #FacebookLogo{
     transform: translateX(20%) scale(4);
-    transition-duration: 1000ms;
-  }
-
-  #facebook:hover > #FacebookText{
-    transform: translateX(30%) scale(4);
     transition-duration: 1000ms;
   }
 
@@ -520,27 +555,12 @@
       transition: transform 350ms ease;
       transform : scale(3,3);
   }
-  
-  #InstagramText{
-    /* Display/Position */
-      grid-area: 1/2;
-      align-self: center;
-      justify-self: center;
-    /* Animation */
-      transition: transform 350ms ease;
-      transform : scale(3,3);
-  }
 
   #instagram:hover > #InstagramLogo{
     transform: translateX(20%) scale(4);
     transition-duration: 1000ms;
   }
 
-  #instagram:hover > #InstagramText{
-    transform: translateX(35%) scale(4);
-    transition-duration: 1000ms;
-  }
-  
   #homeLogosWrapper{
     /* Display/Position */
     position: relative;

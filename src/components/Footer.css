@@ -6,8 +6,11 @@
 /* Color */
     background-color: #173C53;
 /* Font */ 
-    font-size: calc(9px + 0.5vw);
-    line-height: calc(16.8​75px + 0.5vh);
+    /* font-size: calc(9px + 0.5vw);
+    line-height: calc(16.8​75px + 0.5vh); */
+
+    font-size: calc(16px + 0.2vw);
+    line-height: calc(30px + 0.2vw);
 }
 
 .footer a{
@@ -20,10 +23,10 @@ text-decoration: none;
         justify-self: center;
         grid-template-columns: repeat(4, 1fr);
     /* Size*/
-        width: 90%;
+        width: 85vw;
         margin: auto;
-        padding-top: 4vh;
-        padding-bottom: 5vh;
+        padding-top: 2.51vh;
+        padding-bottom: 10vh;
 }
 
 #footerBox > *{
@@ -31,6 +34,8 @@ text-decoration: none;
 }
 
 #footerNidsanLogo{
+    width: 160px;
+    height: 92px;
     grid-area: 1/1;
 }
 
@@ -42,6 +47,20 @@ text-decoration: none;
     grid-area: 1/3;
 }
 
+#footerEmail{
+    display: flex;
+    align-items: center;
+}
+
+#footerEmail:hover{
+    cursor: pointer;
+}
+
+#footerPhone{
+    display: flex;
+    align-items: center;
+}
+
 #footerSocialLinks{
     grid-area: 1/4;
 }
@@ -50,15 +69,13 @@ text-decoration: none;
 /* Display/Position */
     display:flex; 
 /* Size*/
-    margin-bottom: 1vh;
+
 /* Color */
     font-family: 'Helvetica Neue LT Std';
     color: #D6E5E8;
 }
 
-#footerEmail:hover{
-    cursor: pointer;
-}
+
 
 #footerCopyrightText{
 /* Display/Position */
@@ -68,11 +85,12 @@ text-decoration: none;
     transform: translate(-50%, -50%);
 /* Color */
     color: #D6E5E8;
-
+    opacity: 60%;
 /* Font */
     font-family: 'Helvetica Neue LT Std';
-    font-size: calc(6.75px + 0.5vw);
+    font-size: calc(12px + 0.2vw);
     text-align: center;
+
 }
 
 @media(max-width: 800px){

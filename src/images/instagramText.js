@@ -1,5 +1,5 @@
 const instagramText = () => {
-
+	//
 	return(
 		<svg id="InstagramText" 
 				width = '3.52vw' 

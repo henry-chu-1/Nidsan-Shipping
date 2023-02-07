@@ -1,10 +1,10 @@
-const MSC = (props) =>{
+const MSC = () =>{
 
-    const height = (props.height + 'vw'); 
-    const width = ((props.height*0.89) + 'vw');
+    // const height = (props.height + 'vw'); 
+    // const width = ((props.height*0.89) + 'vw');
 
     return(
-        <svg id = 'MSCLogo' xmlns="http://www.w3.org/2000/svg" height = {height} width = {width} viewBox="0 0 20.605 18.344" aria-labelledby="title" aria-describedby="description" role="img">
+        <svg id = 'MSCLogo' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.605 18.344" aria-labelledby="title" aria-describedby="description" role="img">
 	        <g transform="translate(-4.895 -5.832)">
 		    <path id="Path_2615" data-name="Path 2615" d="M512.375,180.19a4.746,4.746,0,0,1-2.236.579v-5.944a3.634,3.634,0,0,0-3.612-3.646,3.571,3.571,0,0,0-2.738,1.269,3.588,3.588,0,0,0-5.3-.195v-.845h-3.655v9.361h-.007a4.938,4.938,0,0,1-2.247-.556l-.406.746a5.471,5.471,0,0,0,2.658.66c1.64,0,2.32-.741,3.838-.741s2.032.743,3.812.743,2.311-.743,3.827-.743,2.184.743,3.824.743a5.649,5.649,0,0,0,2.646-.683Zm-13.716-.164h-.046v-4.714a.993.993,0,1,1,1.985,0V180.4a5.732,5.732,0,0,0-1.939-.369m5.717.367v-5.085a.993.993,0,1,1,1.985,0v4.72l-.051,0a5.729,5.729,0,0,0-1.934.367" transform="translate(-487.28 -165.347)" 
                 fill="black"></path>

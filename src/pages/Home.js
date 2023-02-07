@@ -18,9 +18,9 @@ import CMA from '../images/CMA.js';
 
 //SOCIAL LOGOS
 import FacebookLogo from '../images/Facebook.js';
-import FacebookText from '../images/FacebookText';
+// import FacebookText from '../images/FacebookText';
 import InstagramLogo from '../images/Instagram.js';
-import InstagramText from '../images/InstagramText.js';
+// import InstagramText from '../images/InstagramText.js';
 
 const Home = () =>{
 
@@ -53,6 +53,16 @@ const Home = () =>{
         // console.log(formInputCountry.value);
         // toggleModal(true);
     }
+    const goToAboutSection = () =>{
+        let homeBody = document.getElementById('homeBody');
+        let position = homeBody.getBoundingClientRect();
+        let y = position.top - 30;
+        window.scroll({
+            top: y,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
 
     return(
         <div id = 'home'> 
@@ -64,15 +74,14 @@ const Home = () =>{
                     <br/>
                     <h2 id = 'titleThird'>FREIGHT FORWARDER'S OFFERING PREMIUM LOGISTIC SERVICES</h2>
                     <h2 id = 'titleFourth'>FOR EXPORTER'S WORLDWIDE</h2>
+                    <button id = 'titleReadMoreButton' onClick = {goToAboutSection}>READ MORE</button>
                 </div>
                 <div id = 'homeSocialLogoGrid'>
                     <a id = 'facebook' href = 'https://www.facebook.com/nidsanshipping?mibextid=LQQJ4d' target = '_blank' rel = 'noreferrer'>
                         <FacebookLogo/>
-                        <FacebookText/>
                     </a>
                     <a id = 'instagram' href = 'https://www.instagram.com/nidsanshipping/' target = '_blank' rel = 'noreferrer'>
                         <InstagramLogo/>
-                        <InstagramText/>
                     </a>
                 </div>
             </div>
