@@ -10,9 +10,10 @@ import Footer from '../components/Footer';
 //SHIPPING CARRIER LOGOS
 import Maersk from '../images/Maersk.js';
 import ACL from '../images/ACL.js';
-import HapagLloyd from '../images/HapagLloyd.js';
+// import HapagLloyd from '../images/HapagLloyd.js';
 // import NileDutch from '../images/NileDutch.js';
-import OOCL from '../images/OOCL.js';
+import MSC from '../images/MSC.js'
+// import OOCL from '../images/OOCL.js';
 import CMA from '../images/CMA.js';
 
 //SOCIAL LOGOS
@@ -35,7 +36,7 @@ const Home = () =>{
     const bodyTitleText = 'WE PROVIDE FULL PREMIUM SERVICES IN';
     const formTitleText = 'REGISTER & KICK START';
 
-    const logoHeight = 8;
+    const logoHeight = 5;
 
     const submitForm = () => {
         // const formInputName = document.getElementById('formInputName');
@@ -50,7 +51,7 @@ const Home = () =>{
         // console.log(formInputCity.value);
         // const formInputCountry = document.getElementById('formInputCountry');
         // console.log(formInputCountry.value);
-        toggleModal(true);
+        // toggleModal(true);
     }
 
     return(
@@ -86,11 +87,14 @@ const Home = () =>{
                     <a href = 'https://www.aclcargo.com/' target = '_blank' rel = 'noreferrer'>
                             <ACL height = {logoHeight} />
                     </a>
-                    <a href = 'https://www.hapag-lloyd.com' target = '_blank' rel = 'noreferrer'>
+                    {/* <a href = 'https://www.hapag-lloyd.com' target = '_blank' rel = 'noreferrer'>
                             <HapagLloyd height = {logoHeight} />
                     </a>
                     <a href = 'https://www.oocl.com/' target = '_blank' rel = 'noreferrer'>
                         <OOCL height = {logoHeight} />
+                    </a> */}
+                    <a href = 'https://www.msc.com/' target = '_blank' rel = 'noreferrer'>
+                            <MSC height = {logoHeight} />
                     </a>
                     <a href = 'https://www.cma-cgm.com/' target = '_blank' rel = 'noreferrer'>
                         <CMA height = {logoHeight} />
@@ -108,12 +112,12 @@ const Home = () =>{
                 <h3 id = 'formTitle'> {formTitleText} </h3>
                 <div id = 'formInputGrid'>
                     <div className = 'formInputCard'>
-                        <p className = 'formInputTitle'>OWNER/COMPANY NAME:</p>
-                        <input id = 'formInputName' className = 'textInput' type = 'text' placeholder = 'Nidsan Shipping'></input>
+                        <p className = 'formInputTitle'>CONTACT NAME:</p>
+                        <input id = 'formInputName' className = 'textInput' type = 'text' placeholder = 'Nidsan Shipping Inc.'></input>
                     </div>
                     <div className = 'formInputCard'>
                         <p className = 'formInputTitle'>EMAIL:</p>
-                        <input id = 'formInputEmail' className = 'textInput' type = 'text' placeholder = 'Exports@NidsanShipping.Com'></input>
+                        <input id = 'formInputEmail' className = 'textInput' type = 'text' placeholder = 'Exports@Nidsanshipping.com'></input>
                     </div>
                     <div className = 'formInputCard'>
                         <p className = 'formInputTitle'>CONTACT NUMBER:</p>
@@ -129,13 +133,13 @@ const Home = () =>{
                     </div>
                     <div className = 'formInputCard'>
                         <p className = 'formInputTitle'>COUNTRY:</p>
-                        <input id = 'formInputCountry' className = 'textInput' type = 'text' placeholder = 'United States'></input>
+                        <input id = 'formInputCountry' className = 'textInput' type = 'text' placeholder = ''></input>
                     </div>
                 </div>
             </div>
             <div id = 'formSubmitGrid'>
                 <p id = 'termsAndConditions'>TERMS AND CONDITIONS</p>
-                <button id = 'formSubmitButton' onClick = {submitForm} disabled>SUBMIT</button>
+                <button id = 'formSubmitButton' onClick = {submitForm}>SUBMIT</button>
             </div>
             <Footer footerClass = {'footer'}/>
         </div>

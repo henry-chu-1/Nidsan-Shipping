@@ -111,12 +111,12 @@
 
   #facebook:hover > #FacebookLogo{
     transform: translateX(20%) scale(1.3);
-    transition-duration: 1000ms;
+    transition-duration: 500ms;
   }
 
   #facebook:hover > #FacebookText{
     transform: translateX(30%) scale(1.3);
-    transition-duration: 1000ms;
+    transition-duration: 500ms;
   }
 
   #instagram{
@@ -148,12 +148,12 @@
 
   #instagram:hover > #InstagramLogo{
     transform: translateX(20%) scale(1.3);
-    transition-duration: 1000ms;
+    transition-duration: 500ms;
   }
 
   #instagram:hover > #InstagramText{
     transform: translateX(35%) scale(1.3);
-    transition-duration: 1000ms;
+    transition-duration: 500ms;
   }
 
   #homeBody{
@@ -164,12 +164,6 @@
       margin-bottom: 5vh;
       margin-left: 15%;
       width: 70%;
-  }
-  
-  #ACLLogo {
-    /* Display/Position */
-      position: relative;
-      top: 1.5vw;
   }
   
   .homeLine {
@@ -187,15 +181,53 @@
     margin: auto;
     margin-top: 3vh;
     /* Size */
-    width: 80%;
+    width: 60%;
   }
 
   #homeLogos{
     /* Display/Position */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     justify-self: center;
+  }
+
+  #MaerskLogo{
+    transform: scale(1);
+    transition: transform 350ms ease;
+  }
+
+  #MaerskLogo:hover {
+    transform: scale(1.2);
+    transition-duration: 300ms;
+  }
+
+  #ACLLogo{
+    transform: scale(0.85) translate(0, 0.75vw);
+    transition: transform 350ms ease;
+  }
+
+  #ACLLogo:hover {
+    transform: scale(1.05) translate(0, 0.75vw);
+    transition-duration: 300ms;
+  }
+
+  #MSCLogo{
+    transition: transform 350ms ease;
+  }
+
+  #MSCLogo:hover{
+    transform: scale(1.2);
+    transition-duration: 300ms;
+  }
+
+  #CMALogo{
+    transition: transform 350ms ease;
+  }
+
+  #CMALogo:hover{
+    transform: scale(1.2);
+    transition-duration: 300ms;
   }
 
   .homeBodyTitle {
@@ -287,6 +319,10 @@
       font-size: calc(10px + 0.5vw);
   }
 
+  .textInput::placeholder{
+    opacity: 50%;
+  }
+
   .textInput:focus{
     /* Display/Position */
       outline: none;
@@ -298,8 +334,8 @@
       grid-template-columns: 1fr 1fr;
       gap: 1vw;
     /* Size*/
-      margin-top: 5vh;
-      margin-bottom: 5vh;
+      margin-top: 8vh;
+      margin-bottom: 8vh;
     /* Font */
       font-size: calc(10px + 0.5vw);
   }
@@ -318,17 +354,19 @@
       height: 4vh;
       width: 16vw;
     /* Color */
-      border: 1px solid #B0C5D3;
+      /* border: 1px solid #073C52; */
+      border: 2px solid #B0C5D3;
       color: #B0C5D3;
     /* Font */
       font-size: calc(10px + 0.5vw);
+      font-weight: bold;
       transition: ease-out 0.3s;
       background-color: #E5E5E5;  
   }
 
-  /* #formSubmitButton:hover{
+  #formSubmitButton:hover{
     cursor: pointer;
-    outline: 2px solid #B0C5D3; 
+    /* outline: 2px solid #B0C5D3;  */
   }
 
   #formSubmitButton:before{
@@ -340,8 +378,9 @@
     bottom: 0;
     opacity: 0;
     content: "";
-    background-color: #073C52;  
-    color: #E5E5E5;
+    background-color: #073C52;
+    /* background-color: #073C52;   */
+    color: #073C52;;
   }
 
   #formSubmitButton:hover:before{
@@ -351,7 +390,7 @@
     opacity: 1;
     z-index: -1;
     font-weight: bold;
-  } */
+  }
 
 @media(max-width: 800px){
 
@@ -508,12 +547,12 @@
     justify-items: center;
     margin-top: 2vh;
     /* Size */
-    width: 90vw;
+    width: 80vw;
   }
 
   .homeLine {
     /* Size*/
-      width: 100%;
+      width: 90%;
       height: 2px;
       margin-top: 1vh;
       margin-bottom: 1vh;
@@ -524,10 +563,50 @@
   #homeLogos{
     /* Display/Position */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     justify-self: center;
     /* Size */
     width: 100%;
+  }
+
+  #MaerskLogo{
+    transform: scale(1.5);
+    transition: transform 350ms ease;
+  }
+
+  #MaerskLogo:hover {
+    transform: scale(1.6);
+    transition-duration: 300ms;
+  }
+
+  #ACLLogo{
+    transform: scale(1.3) translate(0, 0.75vw);
+    transition: transform 350ms ease;
+  }
+
+  #ACLLogo:hover {
+    transform: scale(1.4) translate(0, 0.75vw);
+    transition-duration: 300ms;
+  }
+
+  #MSCLogo{
+    transform: scale(1.5);
+    transition: transform 350ms ease;
+  }
+
+  #MSCLogo:hover{
+    transform: scale(1.6);
+    transition-duration: 300ms;
+  }
+
+  #CMALogo{
+    transform: scale(1.5);
+    transition: transform 350ms ease;
+  }
+
+  #CMALogo:hover{
+    transform: scale(1.6);
+    transition-duration: 300ms;
   }
 
   .homeBodyTitle {
@@ -555,7 +634,6 @@
       margin-bottom: 3vh;
     /* Font */ 
       text-align: center;
-      /* font-size: calc(30px + 0.2vw); */
       font-size: 22.5px;
       font-weight: 400;
       line-height: 25.5px;

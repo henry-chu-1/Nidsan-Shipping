@@ -7,6 +7,10 @@ import NidsanWhiteLogo from '../images/NidsanLogoWhite.js'
 
 const Footer = (props) => {
 
+    const openEmail = () =>{
+        window.location.href = "mailto:EXPORTS@NIDSANSHIPPING.COM";
+    }
+
     return(
         <div className = {props.footerClass}>
             <div id = 'footerBox'>
@@ -24,7 +28,8 @@ const Footer = (props) => {
                     <p className = 'footerText'>CONTACT</p>
                 </div>
                 <div id = 'footerContactInfo'>
-                    <p className = 'footerText'><FooterEmailLogo/>&nbsp; EMAIL: EXPORTS@NIDSANSHIPPING.COM</p>
+                    <div id = 'footerEmail' className = 'footerText' onClick = {openEmail}>
+                            <FooterEmailLogo/>&nbsp; EMAIL: EXPORTS@NIDSANSHIPPING.COM</div>
                     <p className = 'footerText'><FooterPhoneLogo/>&nbsp; +1 (855) 678-0750</p>
                 </div>
                 <div id = 'footerSocialLinks'>

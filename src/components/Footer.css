@@ -56,6 +56,10 @@ text-decoration: none;
     color: #D6E5E8;
 }
 
+#footerEmail:hover{
+    cursor: pointer;
+}
+
 #footerCopyrightText{
 /* Display/Position */
     position: absolute;
@@ -124,6 +128,8 @@ text-decoration: none;
         font-size: 10px;
         color: #D6E5E8;
     }
+
+
 
     #footerCopyrightText{
     /* Display/Position */
