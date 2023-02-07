@@ -1,0 +1,142 @@
+.footer{
+/* Display/Position */
+    position: relative;
+/* Size*/
+    width: 100%;
+/* Color */
+    background-color: #173C53;
+/* Font */ 
+    font-size: calc(9px + 0.5vw);
+    line-height: calc(16.8​75px + 0.5vh);
+}
+
+.footer a{
+text-decoration: none;
+}
+
+#footerBox{
+    /* Display/Position */
+        display: grid;
+        justify-self: center;
+        grid-template-columns: repeat(4, 1fr);
+    /* Size*/
+        width: 90%;
+        margin: auto;
+        padding-top: 4vh;
+        padding-bottom: 5vh;
+}
+
+#footerBox > *{
+    justify-self: center;
+}
+
+#footerNidsanLogo{
+    grid-area: 1/1;
+}
+
+#footerPageLinks{
+    grid-area: 1/2;
+}
+
+#footerContactInfo{
+    grid-area: 1/3;
+}
+
+#footerSocialLinks{
+    grid-area: 1/4;
+}
+
+.footerText {
+/* Display/Position */
+    display:flex; 
+/* Size*/
+    margin-bottom: 1vh;
+/* Color */
+    font-family: 'Helvetica Neue LT Std';
+    color: #D6E5E8;
+}
+
+#footerCopyrightText{
+/* Display/Position */
+    position: absolute;
+    bottom: 0.33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/* Color */
+    color: #D6E5E8;
+
+/* Font */
+    font-family: 'Helvetica Neue LT Std';
+    font-size: calc(6.75px + 0.5vw);
+    text-align: center;
+}
+
+@media(max-width: 800px){
+    .footer{
+        /* Display/Position */
+          position: relative;
+        /* Size*/
+          width: 100%;
+        /* Color */
+          background-color: #173C53;
+        /* Font */ 
+          font-size: 12px;
+          line-height: 22.5px;
+    }
+    
+    #footerBox{
+    /* Display/Position */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-self: center;
+    /* Size*/
+        width: 100%;
+        margin: auto;
+        padding-top: 0;
+        padding-bottom: 5vh;
+    }
+
+    #footerNidsanLogo{
+        grid-area: 1/1;
+        height: 8vh;
+        margin-bottom: 1.5vh;
+    }
+
+    #footerPageLinks{
+        grid-area: 2/1;
+    }
+    
+    #footerContactInfo{
+        grid-area: 2/2;
+    }
+    
+    #footerSocialLinks{
+        grid-area: 2/3;
+    }
+
+    .footerText{
+    /* Display/Position */
+        display:flex; 
+    /* Size*/
+        margin-bottom: 1vh;
+    /* Color */
+        font-family: 'Helvetica Neue LT Std';
+        font-size: 10px;
+        color: #D6E5E8;
+    }
+
+    #footerCopyrightText{
+    /* Display/Position */
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    /* Size */
+        width: 100%;
+    /* Color */
+        color: #D6E5E8;
+    /* Font */
+        font-family: 'Helvetica Neue LT Std';
+        font-size: 8px;
+        text-align: center;
+    }
+}

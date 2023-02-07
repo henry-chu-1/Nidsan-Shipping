@@ -32,7 +32,7 @@ const Home = () =>{
     const bodyTitleText = 'WE PROVIDE FULL PREMIUM SERVICES IN';
     const formTitleText = 'REGISTER & KICK START';
 
-    const logoHeight = 5;
+    const logoHeight = 8;
 
     return(
         <div id = 'home'> 
@@ -45,7 +45,7 @@ const Home = () =>{
                     <h2 id = 'titleThird'>FREIGHT FORWARDER'S OFFERING PREMIUM LOGISTIC SERVICES</h2>
                     <h2 id = 'titleFourth'>FOR EXPORTER'S WORLDWIDE</h2>
                 </div>
-                <div>
+                <div id = 'homeSocialLogoGrid'>
                     <a id = 'facebook' href = 'https://www.facebook.com/nidsanshipping?mibextid=LQQJ4d' target = '_blank' rel = 'noreferrer'>
                         <FacebookLogo/>
                         <FacebookText/>
@@ -56,77 +56,86 @@ const Home = () =>{
                     </a>
                 </div>
             </div>
-            <div id = 'homeBody'>
+            <div id = 'homeLogosWrapper'>
                 <hr className = 'homeLine' />
-                <ul>
-                    <li>
-                        <a href = 'https://www.maersk.com/' target = '_blank' rel = 'noreferrer'>
+                <div id = 'homeLogos'>
+                    <a href = 'https://www.maersk.com/' target = '_blank' rel = 'noreferrer'>
                             <Maersk height = {logoHeight} />
-                        </a>
-                    </li>
-                    <li id = 'ACLLogo'>
-                        <a href = 'https://www.aclcargo.com/' target = '_blank' rel = 'noreferrer'>
+                    </a>
+                    <a href = 'https://www.aclcargo.com/' target = '_blank' rel = 'noreferrer'>
                             <ACL height = {logoHeight} />
-                        </a>
-                    </li>
-                    <li>
-                        <a href = 'https://www.hapag-lloyd.com' target = '_blank' rel = 'noreferrer'>
+                    </a>
+                    <a href = 'https://www.hapag-lloyd.com' target = '_blank' rel = 'noreferrer'>
                             <HapagLloyd height = {logoHeight} />
+                    </a>
+                    <a href = 'https://www.oocl.com/' target = '_blank' rel = 'noreferrer'>
+                        <OOCL height = {logoHeight} />
+                    </a>
+                    <a href = 'https://www.cma-cgm.com/' target = '_blank' rel = 'noreferrer'>
+                        <CMA height = {logoHeight} />
+                    </a>
+                </div>
+                <hr className = 'homeLine'/>
+            </div>
+            <div id = 'homeBody'>
+                {/* <div id = 'homeLogosWrapper'>
+                <hr className = 'homeLine' />
+                    <div id = 'homeLogos'>
+                        <a href = 'https://www.maersk.com/' target = '_blank' rel = 'noreferrer'>
+                                <Maersk height = {logoHeight} />
                         </a>
-                    </li>
-                    {/* <li>
-                        <a href = '' target = '_blank'>
-                            <NileDutch height = {logoHeight} />
+                        <a href = 'https://www.aclcargo.com/' target = '_blank' rel = 'noreferrer'>
+                                <ACL height = {logoHeight} />
                         </a>
-                    </li> */}
-                    <li>
+                        <a href = 'https://www.hapag-lloyd.com' target = '_blank' rel = 'noreferrer'>
+                                <HapagLloyd height = {logoHeight} />
+                        </a>
                         <a href = 'https://www.oocl.com/' target = '_blank' rel = 'noreferrer'>
                             <OOCL height = {logoHeight} />
                         </a>
-                    </li>
-                    <li>
                         <a href = 'https://www.cma-cgm.com/' target = '_blank' rel = 'noreferrer'>
                             <CMA height = {logoHeight} />
                         </a>
-                    </li>
-                </ul>
+                    </div>
                 <hr className = 'homeLine'/>
+                </div> */}
                 <h3 className = 'homeBodyTitle'> {bodyTitleText} </h3>
                 <p className = 'homeBodyTitleBullets'>FULL CONTAINER LOAD (FCL) & ROLL-ON/ROLL-OFF (RO/RO)</p>
-                {/* <p className = 'homeBodyTitleBullets'>&</p>
-                <p className = 'homeBodyTitleBullets'>ROLL-ON/ROLL-OFF (RO/RO)</p> */}
                 <p id = 'aboutText'> {aboutText} </p>
             </div>
             <img id = 'coverSecond' src = {coverSecond} alt = ''/>
             <div id = 'homeForm'>
-                <div id = 'formRows'>
-                    <h3 className = 'formTitle'> {formTitleText} </h3>
-                    <ul className = 'formTitleRow'>
-                        <li className = 'formInputTitle'>OWNER/COMPANY NAME:</li>
-                        <li className = 'formInputTitle'>EMAIL:</li>
-                        <li className = 'formInputTitle'>CONTACT NUMBER:</li>
-                    </ul>
-                    <ul className = 'formInputRow'>
-                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                    </ul>
-                    <hr id = 'formRowSeperator'></hr>
-                    <ul className = 'formTitleRow'>
-                        <li className = 'formInputTitle'>ADDRESS:</li>
-                        <li className = 'formInputTitle'>CITY:</li>
-                        <li className = 'formInputTitle'>COUNTRY:</li>
-                    </ul>
-                    <ul className = 'formInputRow'>
-                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                        <li className = 'formInput'><input className = 'textInput' type = 'text'></input></li>
-                    </ul>
+                <h3 id = 'formTitle'> {formTitleText} </h3>
+                <div id = 'formInputGrid'>
+                    <div className = 'formInputCard'>
+                        <p className = 'formInputTitle'>OWNER/COMPANY NAME:</p>
+                        <input className = 'textInput' type = 'text' placeholder = 'Nidsan Shipping'></input>
+                    </div>
+                    <div className = 'formInputCard'>
+                        <p className = 'formInputTitle'>EMAIL:</p>
+                        <input className = 'textInput' type = 'text' placeholder = 'Exports@NidsanShipping.Com'></input>
+                    </div>
+                    <div className = 'formInputCard'>
+                        <p className = 'formInputTitle'>CONTACT NUMBER:</p>
+                        <input className = 'textInput' type = 'text' placeholder = '+18556780750'></input>
+                    </div>
+                    <div className = 'formInputCard'>
+                        <p className = 'formInputTitle'>ADDRESS:</p>
+                        <input className = 'textInput' type = 'text' placeholder = ''></input>
+                    </div>
+                    <div className = 'formInputCard'>
+                        <p className = 'formInputTitle'>CITY:</p>
+                        <input className = 'textInput' type = 'text' placeholder = ''></input>
+                    </div>
+                    <div className = 'formInputCard'>
+                        <p className = 'formInputTitle'>COUNTRY:</p>
+                        <input className = 'textInput' type = 'text' placeholder = 'United States'></input>
+                    </div>
                 </div>
-                <ul id = 'formSubmitRow'>
-                    <li className = 'formSubmitRowItem'><p id = 'termsAndConditions'>TERMS AND CONDITIONS</p></li>
-                    <li className = 'formSubmitRowItem'><button id = 'formSubmitButton'>SUBMIT</button></li>
-                </ul>
+            </div>
+            <div id = 'formSubmitGrid'>
+                <p id = 'termsAndConditions'>TERMS AND CONDITIONS</p>
+                <button id = 'formSubmitButton'>SUBMIT</button>
             </div>
             <Footer footerClass = {'footer'}/>
         </div>
