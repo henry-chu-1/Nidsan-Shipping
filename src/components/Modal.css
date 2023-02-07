@@ -1,0 +1,36 @@
+.modal{
+    /* Display/Position */
+    position: fixed;   
+    z-index: 2;
+    visibility: visible;
+    top: 0;
+    /* Size */
+    height: 100vh;
+    width: 100vw;
+  }
+
+#modalBackground{
+    /* Size*/
+    height: 100vh;
+    width: 100vw;
+    /* Color */
+    background-color: gray;
+    opacity: 60%;
+}
+
+#innerModal{
+    /* Display/Position */
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    /* Size*/
+    height: 50vh;
+    width: 80vw;
+    /* Color */
+    opacity: 80%;
+    background-color: black;
+}
+
+.hidden{
+    visibility: hidden;
+}

@@ -1,7 +1,7 @@
 *{
   /* outline: red solid 1px; */
 }
-  
+
   #coverAndTitle{
     /* Display/Position */
       display: grid;
@@ -95,9 +95,6 @@
 
   #FacebookLogo{
     /* Display/Position */
-      /* position: absolute;
-      top: 85%;
-      left: 2%; */
       grid-area: 1/1;
       justify-self: center;
     /* Animation */
@@ -314,18 +311,47 @@
 }
   #formSubmitButton{
     /* Display/Position */
-      /* display: absolute; */
+      position: relative;
       justify-content: center;
+      z-index: 1;
     /* Size*/
       height: 4vh;
       width: 16vw;
     /* Color */
-      background: transparent; 
       border: 1px solid #B0C5D3;
       color: #B0C5D3;
     /* Font */
       font-size: calc(10px + 0.5vw);
+      transition: ease-out 0.3s;
+      background-color: #E5E5E5;  
   }
+
+  /* #formSubmitButton:hover{
+    cursor: pointer;
+    outline: 2px solid #B0C5D3; 
+  }
+
+  #formSubmitButton:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #073C52;  
+    color: #E5E5E5;
+  }
+
+  #formSubmitButton:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    font-weight: bold;
+  } */
 
 @media(max-width: 800px){
 
