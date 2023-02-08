@@ -127,7 +127,7 @@ code {
     padding-top: 1%;
 }
 
-#logo{
+#nidsan-logo{
 /* Display/Position */
   position: absolute;
   /* top: 1vw;
@@ -161,7 +161,7 @@ code {
 
 @media(max-width: 800px){
 
-  #logo{
+  #nidsan-logo{
     /* Display/Position */
       position: relative;
       top: 1.5%;

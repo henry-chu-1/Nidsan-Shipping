@@ -1,6 +1,6 @@
 .footer{
 /* Display/Position */
-    position: relative;
+    position: absolute;
 /* Size*/
     width: 100%;
 /* Color */
@@ -14,7 +14,7 @@
 }
 
 .footer a{
-text-decoration: none;
+    text-decoration: none;
 }
 
 #footerBox{

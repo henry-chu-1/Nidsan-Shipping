@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import NidsanLogo from '../images/NidsanLogo.js'
+import NidsanLogo from '../images/logo_nidsan.js'
 
 const NavBar = (props) => {
 

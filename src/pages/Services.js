@@ -1,4 +1,4 @@
-import "../pagesCSS/Services.css"
+import "./Services.css"
 
 import Footer from '../components/Footer';
 

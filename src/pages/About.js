@@ -1,4 +1,6 @@
-import '../pagesCSS/About.css';
+import React from 'react'
+
+import './About.css';
 
 import Footer from '../components/Footer';
 
