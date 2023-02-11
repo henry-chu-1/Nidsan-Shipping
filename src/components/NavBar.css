@@ -1,0 +1,14 @@
+
+#nidsan-logo{
+    /* Display/Position */
+    position: absolute;
+    top: 2.75%;
+    left: 2.75%;
+    z-index: 1;
+    margin: 0;
+    
+    /* Size*/
+    padding: 0;
+    width: 140px;
+    height: 80px;
+}

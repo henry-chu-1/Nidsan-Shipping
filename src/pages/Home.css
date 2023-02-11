@@ -127,6 +127,44 @@
   font-weight: bold;
   font-size: calc(12px + 0.2vw);
   letter-spacing: 3px;
+
+  /* Animation */
+  transition: ease-out 0.3s;
+}
+
+#home-read-more-button:hover{
+  /* Display/Position */
+  cursor: pointer;
+
+  /* Color */
+  color: #BC955B;
+  
+  /* Animation */
+  transform: translateY(0vh) scale(1.05);
+  box-shadow: 14vw 6vh rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 1vh 25px 0px rgba(0,0,0,0.75);
+}
+
+#home-read-more-button:before{
+  /* Display/Position */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.5s all ease;
+  content: "";
+  background-color: #073C52;
+}
+
+#home-read-more-button:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+  font-weight: bold;
 }
 
 #home-social-logos-grid{
@@ -391,6 +429,13 @@
   outline: none;
 }
 
+.home-form-input-warning{
+  /* Font */
+  font-weight: lighter;
+  font-size: calc(10px + 0.2vw);
+  color:red;
+}
+
 #home-form-submit-grid{
   /* Display/Position */
   display: grid;
@@ -402,7 +447,6 @@
   margin-bottom: 8.7vh;
   
   /* Font */
-  /* font-size: calc(10px + 0.5vw); */
   font-size: calc(20.38px + 0.2vw);
   line-height: calc(26.26px + 0.2vw);
 }
@@ -413,7 +457,7 @@
   align-self: center;
 }
 
-#home-form-submit-buttom{
+#home-form-submit-button{
   /* Display/Position */
   position: relative;
   justify-content: center;
@@ -435,7 +479,7 @@
   transition: ease-out 0.3s;
 }
 
-#home-form-submit-buttom:hover{
+#home-form-submit-button:hover{
   /* Display/Position */
   cursor: pointer;
 
@@ -447,7 +491,7 @@
   transform: translateY(0vh) scale(1.05);
 }
 
-#home-form-submit-buttom:before{
+#home-form-submit-button:before{
   /* Display/Position */
   position: absolute;
   top: 0;
@@ -461,7 +505,7 @@
   color: #073C52;
 }
 
-#home-form-submit-buttom:hover:before{
+#home-form-submit-button:hover:before{
   transition: 0.5s all ease;
   left: 0;
   right: 0;
@@ -727,7 +771,7 @@
       text-align: center;
   }
 
-  #home-form-submit-buttom{
+  #home-form-submit-button{
     /* Display/Position */
       justify-self: center;
     /* Size*/

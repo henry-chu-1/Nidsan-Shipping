@@ -1,17 +1,20 @@
 import { Link } from 'react-router-dom'
+import './NavBar.css'
 import NidsanLogo from '../images/logo_nidsan.js'
 
 const NavBar = (props) => {
 
     return(
-        <div id = 'header'>
+        <div id = 'navBar'>
             <Link
                 className = {props.currentPage === 'home' ? 'current' : 'inactive'}
                 to= '/' 
                 onClick={() => props.setCurrentPage('home')}>
                 <NidsanLogo/>
             </Link>
-            <nav id = 'navigation'>
+            <nav id = 'navBar-menu'>
+
+
                 <ul>
                     {/* <li>
                         <Link

@@ -19,7 +19,10 @@ import InstagramLogo from '../images/logo_instagram.js';
 
 const Home = () =>{
 
-    // const [showModal, toggleModal] = useState(false);
+    const [showModal, toggleModal] = useState(false);
+    const [hasName, toggleHasName] = useState(true);
+    const [hasEmail, toggleHasEmail] = useState(true);
+    const [hasPhone, toggleHasPhone] = useState(true);
 
     const aboutText = "NIDSAN SHIPPING INC. is a FREIGHT FORWARDING and an NVOCC (NON VESSEL OPERATING COMMON CARRIERS ) company based in New York, USA." + 
                         " This was founded in 1998 and since then, it has been a memorable journey till date." + 
@@ -33,19 +36,76 @@ const Home = () =>{
 
 
     const submitForm = () => {
-        // const formInputName = document.getElementById('home-form-name-input');
-        // console.log(formInputName.value);
-        // const formInputEmail = document.getElementById('home-form-email-input');
-        // console.log(formInputEmail.value);
-        // const formInputNumber = document.getElementById('home-form-phone-input');
-        // console.log(formInputNumber.value);
-        // const formInputAddress = document.getElementById('home-form-address-input');
-        // console.log(formInputAddress.value);
-        // const formInputCity = document.getElementById('home-form-city-input');
-        // console.log(formInputCity.value);
-        // const formInputCountry = document.getElementById('home-form-country-input');
-        // console.log(formInputCountry.value);
-        // toggleModal(true);
+        const formInputName = document.getElementById('home-form-name-input').value
+        const formInputEmail = document.getElementById('home-form-email-input').value
+        const formInputNumber = document.getElementById('home-form-phone-input').value
+        const formInputAddress = document.getElementById('home-form-address-input').value
+        const formInputCity = document.getElementById('home-form-city-input').value
+        const formInputCountry = document.getElementById('home-form-country-input').value
+
+        let addressString = '\nAddress: ' + formInputAddress;
+        let cityString = '\nCity: ' + formInputCity;
+        let countryString = '\nCountry: ' + formInputCountry;
+
+        if(formInputName == ""){
+            toggleHasName(false);
+        }
+        else{
+            toggleHasName(true);
+        }
+
+        if(formInputEmail == ""){
+            toggleHasEmail(false);
+        }
+        else{
+            toggleHasEmail(true);
+        }
+
+        if(formInputNumber == ""){
+            toggleHasPhone(false);
+        }
+        else{
+            toggleHasPhone(true);
+        }
+
+        if(formInputAddress == ""){
+            addressString += "(None Given)";
+        }
+        if(formInputCity == ""){
+            cityString += "(None Given)";
+        }
+        if(formInputCountry == ""){
+            countryString += "(None Given)";
+        }
+        if(!hasName || !hasEmail || !hasPhone){
+            console.log("Failed");
+            return;
+        }
+
+        const subject = "Inquiry From: " + formInputName;
+        const message = "Name: " + formInputName + 
+                            "\nEmail: " + formInputEmail + 
+                            "\nPhone Number: " + formInputNumber +
+                            addressString + 
+                            cityString +
+                            countryString;
+
+        fetch('https://www.nidsanshipping.com/contact.php', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                subject: subject,
+                message: message
+            }),
+        }).then(res => res.json())
+        .then(response => {
+            console.log('response');
+            console.log(response);
+        })
+        toggleModal(true);
     }
 
     const goToAboutSection = () =>{
@@ -54,7 +114,6 @@ const Home = () =>{
         console.log(y);
         window.scroll({
             top: y,
-            left: 0,
             behavior: 'smooth'
         });
     }
@@ -80,8 +139,7 @@ const Home = () =>{
                     </a>
                 </div>
             </div>
-            {/* <Modal showModal = {showModal}
-                        toggleModal = {toggleModal}/> */}
+            
             <div id = 'home-company-logos-wrapper'>
                 <div className = 'home-company-logos-line'/>
                 <div id = 'home-company-logos'>
@@ -106,20 +164,25 @@ const Home = () =>{
                 <p id = 'home-about-text'> { aboutText } </p>
             </div>
             <img id = 'home-body-image' src = { homeBodyImage } alt = ''/>
+            {/* <Modal showModal = { showModal } toggleModal = { toggleModal } 
+                    toggleHasName = { hasName } toggleHasEmail = { hasEmail } toggleHasPhone = { hasPhone }/> */}
             <div id = 'home-form'>
                 <h3 id = 'home-form-title'> { formTitleText } </h3>
                 <div id = 'home-form-input-grid'>
                     <div className = 'home-form-input-card'>
                         <p className = 'home-form-input-title'>CONTACT NAME:</p>
                         <input id = 'home-form-name-input' className = 'home-form-text-input' type = 'text' placeholder = 'Nidsan Shipping Inc.'></input>
+                        {hasName ? '' : <p className = 'home-form-input-warning'>*A name is required*</p>}
                     </div>
                     <div className = 'home-form-input-card'>
                         <p className = 'home-form-input-title'>EMAIL:</p>
                         <input id = 'home-form-email-input' className = 'home-form-text-input' type = 'text' placeholder = 'Exports@Nidsanshipping.com'></input>
+                        {hasEmail ? '' : <p className = 'home-form-input-warning'>*An Email address is required*</p>}
                     </div>
                     <div className = 'home-form-input-card'>
                         <p className = 'home-form-input-title'>CONTACT NUMBER:</p>
                         <input id = 'home-form-phone-input' className = 'home-form-text-input' type = 'text' placeholder = '+18556780750'></input>
+                        {hasPhone ? '' : <p className = 'home-form-input-warning'>*A phone number is required*</p>}
                     </div>
                     <div className = 'home-form-input-card'>
                         <p className = 'home-form-input-title'>ADDRESS:</p>
@@ -137,7 +200,7 @@ const Home = () =>{
             </div>
             <div id = 'home-form-submit-grid'>
                 <p id = 'home-form-terms-and-conditions'>TERMS AND CONDITIONS</p>
-                <button id = 'home-form-submit-buttom' onClick = {submitForm}>SUBMIT</button>
+                <button id = 'home-form-submit-button' onClick = {submitForm}>SUBMIT</button>
             </div>
             <Footer footerClass = 'footer'/>
         </div>

@@ -127,26 +127,6 @@ code {
     padding-top: 1%;
 }
 
-#nidsan-logo{
-/* Display/Position */
-  position: absolute;
-  /* top: 1vw;
-  left: 1.5vw; */
-  top: 2.75%;
-  left: 2.75%;
-
-  z-index: 1;
-/* Size*/
-  margin: 0;
-  padding: 0;
-  
-
-  width: 140px;
-  height: 80px;
-  /* width: 185.12px;
-  height: 105.79px; */
-}
-
 /* FOOTER */
 
 
