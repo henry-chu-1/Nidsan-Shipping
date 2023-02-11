@@ -3,9 +3,9 @@ import './Home.css';
 
 //HOME PAGE COMPONENT / IMAGES / CSS IMPORTS
 import Modal from '../components/Modal'
+import Footer from '../components/Footer';
 import homeCoverImage from '../images/image_home_cover.png';
 import homeBodyImage from '../images/image_home_body.png';
-import Footer from '../components/Footer';
 
 //SHIPPING CARRIER LOGOS
 import MaerskLogo from '../images/logo_maersk.js';
@@ -19,7 +19,7 @@ import InstagramLogo from '../images/logo_instagram.js';
 
 const Home = () =>{
 
-    const [showModal, toggleModal] = useState(false);
+    // const [showModal, toggleModal] = useState(false);
 
     const aboutText = "NIDSAN SHIPPING INC. is a FREIGHT FORWARDING and an NVOCC (NON VESSEL OPERATING COMMON CARRIERS ) company based in New York, USA." + 
                         " This was founded in 1998 and since then, it has been a memorable journey till date." + 
@@ -31,7 +31,6 @@ const Home = () =>{
     const bodyTitleText = 'WE PROVIDE FULL PREMIUM SERVICES IN';
     const formTitleText = 'REGISTER & KICK START';
 
-    const logoHeight = 5;
 
     const submitForm = () => {
         // const formInputName = document.getElementById('home-form-name-input');
@@ -51,8 +50,8 @@ const Home = () =>{
 
     const goToAboutSection = () =>{
         let homeBody = document.getElementById('home-body');
-        let position = homeBody.getBoundingClientRect();
-        let y = position.top - 30;
+        let y = homeBody.offsetTop - (window.innerHeight / 4.5); 
+        console.log(y);
         window.scroll({
             top: y,
             left: 0,
