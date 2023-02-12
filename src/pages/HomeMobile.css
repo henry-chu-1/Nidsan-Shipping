@@ -1,0 +1,219 @@
+@media(max-width: 900px){
+
+    #home-header{  
+        /* Size */
+        max-height: 100vh;
+        width: 100vw;
+        height: 100vh;
+    }
+  
+    #home-cover-image{
+        /* Display/Position */
+        z-index: -2;
+        overflow: hidden;
+        justify-self: center;
+        
+        /* Size*/
+        min-height: 110%;
+        width: auto;
+        min-width: 100%;
+        
+        /* Animation */
+        transform: translateY(-10%);
+        animation-name: zoomOutCover;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+    }
+  
+    #home-title{
+        /* Display/Position */
+        top: 25%;
+        
+        /* Size*/
+        width: 100vw;
+        height: 85%;
+    }
+  
+    #home-title-first-line{
+        /* Font */
+        font-size: calc(45px + 0.2vw);
+        line-height: calc(45px + 0.2vw);
+    }
+  
+    #home-title-second-line{
+        /* Font */
+        font-size: calc(45px + 0.2vw);
+        line-height: calc(45px + 0.2vw);
+    }
+      
+    #home-title-third-line{
+        /* Font */
+        font-size: calc(19px + 0.2vw);
+        line-height: calc(24.51px + 0.2vw);
+    }
+      
+    #home-title-fourth-line{
+        /* Font */
+        font-size: calc(19px + 0.2vw);
+        line-height: calc(24.51px + 0.2vw);
+    }
+  
+    #home-read-more-button{
+        /* Size*/
+        height: 6vh;
+        width: 50vw;
+        margin-top: 3.2vh;
+    
+        /* Font */
+        font-size: calc(14px + 0.2vw);
+        letter-spacing: 3px;
+    }
+    
+    #home-company-logos-wrapper{
+        /* Size */
+        margin: auto;
+        margin-top: 3.29vh;
+        width: 80vw;
+    }
+
+    #home-maersk-logo{
+        /* Size*/
+        width: 55.56px;
+        height: 49.15px;
+    }
+
+    #home-maersk-logo:hover {
+        /* Animation */ 
+        transform: scale(1.2);
+    }
+
+    #home-acl-logo{
+        /* Size*/
+        width: 60px;
+        height: 33.75px;
+    }
+
+    #home-acl-logo:hover {
+        /* Animation */
+        transform: scale(1.2);
+    }
+
+    #home-msc-logo{
+        /* Size*/
+        width: 50px;
+        height: 44.5px;
+    }
+
+    #home-msc-logo:hover{
+        /* Animation */
+        transform: scale(1.2);
+    }
+
+    #home-cma-logo{
+        /* Size*/
+        width: 71.77px;
+        height: 56.475px;
+    }
+
+    #home-cma-logo:hover{
+        /* Animation */
+        transform: scale(1.2);
+    }
+
+    #home-body{
+        /* Size*/
+        width: 80vw;
+    }
+
+    .home-about-title{
+        /* Font */ 
+        font-size: calc(19px + 0.2vw);
+        line-height: calc(24.51px + 0.2vw);
+    }
+    
+    #home-about-text{
+        /* Font */ 
+        font-size: calc(12px + 0.2vw);
+        line-height: calc(15.52px + 0.2vw);
+    }
+    
+    #home-body-image{
+        /* Size*/
+        width: 92.15vw;
+    }
+    
+    #home-form{
+
+    }
+    
+    #home-form-title{
+        /* Font */ 
+        font-size: calc(19px + 0.2vw);
+        line-height: calc(24.51px + 0.2vw);
+    }
+    
+    #home-form-input-grid{
+        /* Display/Position */
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+        /* Size*/
+        margin: auto;
+        margin-top: 6vh;
+
+        /* Font */
+        font-size: calc(12px + 0.2vw);
+    }
+    
+    .home-form-input-card{
+        /* Font */
+        line-height: calc(30px + 0.2vh);
+    }
+    
+    .home-form-text-input{
+
+    }
+    
+    .home-form-text-input::placeholder{
+
+    }
+    
+    .home-form-text-input:focus{
+
+    }
+    
+    .home-form-input-warning{
+    
+    }
+    
+    #home-form-submit-grid{
+        /* Display/Position */
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 5vh;
+
+        /* Font */
+        font-size: calc(16px + 0.2vw);
+    }
+    
+    #home-form-terms-and-conditions{
+
+    }
+    
+    #home-form-submit-button{
+        /* Size*/
+        height: 6vh;
+        width: 50vw;
+    }
+    
+    #home-form-submit-button:hover{
+    
+    }
+    
+    #home-form-submit-button:before{
+    
+    }
+    
+    #home-form-submit-button:hover:before{
+
+    }
+}

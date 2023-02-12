@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Home.css';
+import './HomeMobile.css';
 
 //HOME PAGE COMPONENT / IMAGES / CSS IMPORTS
 import Modal from '../components/Modal'

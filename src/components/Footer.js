@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Footer.css'
+import './FooterMobile.css'
 
 import FooterEmailLogo from '../images/FooterEmailLogo.js';
 import FooterPhoneLogo from '../images/FooterPhoneLogo.js';
@@ -14,7 +15,7 @@ const Footer = (props) => {
 
     return(
         <div className = {props.footerClass}>
-            <div id = 'footerBox'>
+            <div id = 'footer-box'>
                 <div id = 'footerNidsanLogo'>
                     <NidsanWhiteLogo/>
                 </div>
@@ -30,7 +31,7 @@ const Footer = (props) => {
                 </div>
                 <div id = 'footerContactInfo'>
                     <div id = 'footerEmail' className = 'footerText' onClick = {openEmail}>
-                            <FooterEmailLogo/>&nbsp; EMAIL: EXPORTS@NIDSANSHIPPING.COM</div>
+                            <FooterEmailLogo/>&nbsp;EXPORTS@NIDSANSHIPPING.COM</div>
                     <p id = 'footerPhone' className = 'footerText'><FooterPhoneLogo/>&nbsp; +1 (855) 678-0750</p>
                 </div>
                 <div id = 'footerSocialLinks'>

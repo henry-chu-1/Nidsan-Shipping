@@ -1,0 +1,61 @@
+@media(max-width: 800px){
+    .footer{
+        /* Font */ 
+        font-size: 10px;
+        line-height: 16px;
+    }
+    
+    #footer-box{
+        /* Display/Position */
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        /* Size*/
+        width: 90vw;
+        padding-bottom: 5vh;
+    }
+
+    #footerNidsanLogo{
+        grid-area: 1/1;
+        width: 92.75px;
+        height: 53px;
+        margin-bottom: 2vh;
+    }
+
+    #footerPageLinks{
+        grid-area: 2/1;
+    }
+    
+    #footerContactInfo{
+        grid-area: 2/2;
+    }
+
+    #footerSocialLinks{
+        grid-area: 2/3;
+    }
+
+    .footerText{
+        /* Display/Position */
+        display:flex; 
+        /* Size*/
+        margin-bottom: 1vh;
+        /* Color */
+        font-family: 'Helvetica Neue LT Std';
+        font-size: 10px;
+        color: #D6E5E8;
+    }
+
+    #footerCopyrightText{
+    /* Display/Position */
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    /* Size */
+        width: 100%;
+    /* Color */
+        color: #D6E5E8;
+    /* Font */
+        font-family: 'Helvetica Neue LT Std';
+        font-size: 8px;
+        text-align: center;
+    }
+}
