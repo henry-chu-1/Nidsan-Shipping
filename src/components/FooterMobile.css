@@ -1,8 +1,8 @@
 @media(max-width: 975px){
     .footer{
         /* Font */ 
-        font-size: 10px;
-        line-height: 16px;
+        font-size: var(--ten-px);
+        line-height: var(--sixteen-px);
     }
     
     #footer-box{
@@ -16,8 +16,8 @@
 
     #footerNidsanLogo{
         grid-area: 1/1;
-        width: 92.75px;
-        height: 53px;
+        width: calc(92.75px + 0.25vw);
+        height: calc(53px + 0.25vh);
         margin-bottom: 2vh;
     }
 
@@ -40,8 +40,8 @@
         margin-bottom: 1vh;
         /* Color */
         font-family: 'Helvetica Neue LT Std';
-        font-size: 10px;
-        color: #D6E5E8;
+        font-size: var(--ten-px);
+        color: var(--nidsan-light-blue);
     }
 
     #footerCopyrightText{
@@ -52,10 +52,10 @@
     /* Size */
         width: 100%;
     /* Color */
-        color: #D6E5E8;
+        color: var(--nidsan-light-blue);
     /* Font */
         font-family: 'Helvetica Neue LT Std';
-        font-size: 8px;
+        font-size: var(--eight-px);
         text-align: center;
     }
 }

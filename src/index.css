@@ -32,6 +32,7 @@
   --nidsan-blue: #073C52;
   --nidsan-gold: #BC955B;
   --nidsan-light-blue: #D6E5E8;
+  --nidsan-white: #F5F0F0;
 
   /* Fonts */
   /* --ten-px: 10px;
@@ -44,7 +45,7 @@
   --thirty-four-px: 34px;
   --forty-px: 40px;
   --sixty-px: 60px; */
-
+  --eight-px: calc(8px + 0.05vw + 0.05vh);
   --ten-px: calc(10px + 0.05vw + 0.05vh);
   --twelve-px: calc(12px + 0.05vw + 0.05vh);
   --fourteen-px: calc(14px + 0.05vw + 0.05vh);
@@ -58,6 +59,7 @@
   --thirty-four-px: calc(34px + 0.05vw + 0.05vh);
   --forty-px: calc(40px + 0.05vw + 0.05vh);
   --forty-five-px: calc(45px + 0.05vw + 0.05vh);
+  --fifty-px: calc(50px + 0.05vw + 0.05vh);
   --sixty-px: calc(60px + 0.05vw + 0.05vh);
 
 
@@ -88,7 +90,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 
 @media(max-width: 900px){
 

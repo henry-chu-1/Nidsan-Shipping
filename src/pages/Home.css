@@ -1,7 +1,3 @@
-*{
-  /* outline: red solid 1px; */
-}
-
 #home-header{
   /* Display/Position */
   display: grid;
@@ -85,16 +81,78 @@
   font-size: var(--nineteen-px);
   line-height: var(--twenty-four-px);
 }
-  
-#home-read-more-button{
+
+#home-cover-buttons-wrapper{
   /* Display/Position */
-  position: relative;
+  display: flex;
   justify-content: center;
+  gap: calc(22px + 0.1vw)
+}
+
+.home-request-a-quote-button{
+  /* Display/Position */
   z-index: 1;
 
   /* Size*/
-  height: calc(50px + 0.1vh);
-  width: calc(200px + 0.1vw);
+  width: calc(230px + 0.1vw);
+  height: calc(55px + 0.1vh);
+  margin-top: 2vh;
+
+  /* Color */
+  color: var(--nidsan-white);
+  background-color: var(--nidsan-blue);
+  border: none;
+
+  /* Font */
+  font-size: var(--twelve-px);
+  letter-spacing: 3px;
+
+  /* Animation */
+  transition: ease-out 0.5s;
+}
+
+.home-request-a-quote-button:hover{
+  /* Display/Position */
+  cursor: pointer;
+
+  /* Color */
+  color: var(--nidsan-blue);
+  
+  /* Animation */
+  transform: translateY(0vh) scale(1.05);
+  box-shadow: 14vw 6vh rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 1vh 25px 0px rgba(0,0,0,0.75);
+}
+
+.home-request-a-quote-button:before{
+  /* Display/Position */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.5s all ease;
+  content: "";
+  background-color: var(--nidsan-light-blue);
+}
+
+.home-request-a-quote-button:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+  font-weight: bold;
+}
+
+#home-read-more-button{
+  /* Display/Position */
+  z-index: 1;
+
+  /* Size*/
+  width: calc(230px + 0.1vw);
+  height: calc(55px + 0.1vh);
   margin-top: 2vh;
 
   /* Color */
@@ -104,10 +162,9 @@
   /* Font */
   font-size: var(--twelve-px);
   letter-spacing: 3px;
-  /* font-size: calc(12px + 0.2vw); */
 
   /* Animation */
-  transition: ease-out 0.3s;
+  transition: ease-out 0.5s;
 }
 
 #home-read-more-button:hover{
@@ -349,17 +406,230 @@
   margin-top: calc(54px + 0.1vh);
   margin-left: 3.925vw;
   width: 92.15vw;
+}
 
-  /* margin-top: 4.88vh; */
+#home-body-services-wrapper{
+  /* Display/Position */
+  text-align: center;
+
+  /* Size*/
+  width: 80vw;
+  margin: auto;
+  margin-top: calc(63.85px + 0.1vh);
+}
+
+#home-body-services-title{
+  /* Font */
+  font-family: 'TT Firs Neue Bold';
+  font-weight: bold;
+  font-size: var(--thirty-px);
+  line-height: var(--thirty-four-px);
+}
+
+#home-body-services-title-secondary{
+  /* Font */
+  font-size: var(--sixteen-px);
+  line-height: var(--twenty-four-px);
+}
+
+#home-body-services-logos-wrapper{
+  /* Display/Position */
+  display: flex;
+  justify-content: center;
+  gap: calc(85px + 0.1vw);
+  margin-top: calc(68px + 0.1vh);
+}
+
+.home-body-services-logo-text-wrapper{
+  /* Display/Position */
+  display: flex;
+  align-items: center;
+  gap: calc(8px + 0.1vw);
+
+  /* Size */
+  
+
+  /* Font */
+  font-size: var(--sixteen-px);
+  line-height: var(--twenty-four-px);
+}
+
+#ocean-freight-logo{
+  /* Size */
+  width: calc(43px + 0.1vw);
+  height: calc(41px + 0.1vh);
+}
+
+#road-transportation-logo{
+  /* Size */
+  width: calc(41px + 0.1vw);
+  height: calc(39px + 0.1vh);
+}
+
+#air-freight-logo{
+  /* Size */
+  width: calc(43px + 0.1vw);
+  height: calc(41px + 0.1vh);
+}
+
+#supply-chain-logo{
+  /* Size */
+  width: calc(41px + 0.1vw);
+  height: calc(39px + 0.1vh);
+}
+
+
+#home-body-services-view-all-button{
+  /* Display/Position */
+  z-index: 1;
+  margin-top: calc(68px + 0.1vh);
+  
+  /* Size*/
+  width: calc(230px + 0.1vw);
+  height: calc(55px + 0.1vh);
+  
+  /* Color */
+  color: var(--nidsan-white);
+  background-color: var(--nidsan-blue);
+  
+  /* Font */
+  font-size: var(--sixteen-px);
+  letter-spacing: 3px;
+
+  /* Animation */
+  transition: ease-out 0.5s;
+}
+
+#home-body-services-view-all-button:hover{
+  /* Display/Position */
+  cursor: pointer;
+  
+  /* Color */
+  color: var(--nidsan-blue);
+  
+  /* Animation */
+  transform: translateY(0vh) scale(1.05);
+  box-shadow: 14vw 6vh rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 1vh 25px 0px rgba(0,0,0,0.75);
+}
+
+#home-body-services-view-all-button:before{
+  /* Display/Position */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.5s all ease;
+  content: "";
+  background-color: var(--nidsan-light-blue);
+}
+
+#home-body-services-view-all-button:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+  font-weight: bold;
+}
+
+#home-body-ship-confidently-wrapper{
+  /* Display/Position */
+  display: grid;
+  gap: calc(15px + 0.1vw);
+  margin-top: calc(53px + 0.1vh);
+  margin-left: 2.5vw;
+  
+  /* Size */
+  width: 90vw;
+}
+
+#home-body-ship-confidently-image{
+  /* Display/Position */
+  grid-area: 1/1;
+  
+  /* Size */
+  width: 40vw;
+}
+
+#home-body-ship-confidently-text-wrapper{
+  /* Display/Position */
+  grid-area: 1/2;
+  align-self: center;
+}
+
+#home-body-ship-confidently-title{
+  /* Font */
+  font-family: 'TT Firs Neue Bold';
+  font-weight: bold;
+  font-size: var(--forty-px);
+  line-height: var(--forty-px);
+}
+
+#home-body-ship-confidently-text{
+  /* Display/Position */
+  margin-top: calc(15px + 0.1vh);
+  
+  /* Font */
+  font-size: var(--sixteen-px);
+  line-height: var(--twent-four-px);
+}
+
+#home-body-high-impact-wrapper{
+  /* Display/Position */
+  display: grid;
+  margin: auto;
+  margin-top: calc(91px + 0.1vh);
+  
+  /* Size */
+  width: 90vw;
+}
+
+#home-body-high-impact-image{
+  /* Display/Position */
+  grid-area: 1/1;
+  margin: auto;
+  /* Size */
+  width: 80vw;
+}
+
+#home-body-high-impact-text-wrapper{
+  /* Display/Position */
+  grid-area: 1/1;
+  margin-top: calc(100px + 0.1vh);
+  margin-left: 40vw;
+  /* Size */
+  width: 40vw;
+}
+
+#home-body-high-impact-title{
+  /* Font */
+  font-family: 'TT Firs Neue Bold';
+  font-weight: bold;
+  font-size: var(--forty-px);
+  line-height: var(--forty-px);
+  color: var(--nidsan-white);
+}
+
+#home-body-high-impact-text{
+  /* Display/Position */
+  margin-top: calc(20px + 0.1vh);
+  
+  /* Font */
+  font-size: var(--sixteen-px);
+  line-height: var(--twent-four-px);
+  color: var(--nidsan-white);
 }
 
 #home-form{
-  /* Size*/
+  /* Display/Position */
   margin-top: calc(95px + 0.1vh);
   margin-left: 10vw;
-  width: 80vw;
 
-  /* margin-top: 7vh; */
+  /* Size*/
+  width: 80vw;
 }
 
 #home-form-title{

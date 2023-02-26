@@ -1,5 +1,4 @@
 #nav-bar{
-
     /* Size*/
     width: 100%;
 }
@@ -28,7 +27,7 @@
     gap: 2vw;
 
     /* Font */
-    font-size: calc(16px + 0.2vw);
+    font-size: var(--sixteen-px);
     outline: red solid 1px;
 }
 

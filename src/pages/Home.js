@@ -7,6 +7,8 @@ import Modal from '../components/Modal'
 import Footer from '../components/Footer';
 import homeCoverImage from '../images/image_home_cover.png';
 import homeBodyImage from '../images/image_home_body.png';
+import homeShipConfidentlyImage from '../images/image_home_ship_confidently.png'
+import homeHighImpactImage from '../images/image_home_high_impact.png'
 
 //SHIPPING CARRIER LOGOS
 import MaerskLogo from '../images/logo_maersk.js';
@@ -18,6 +20,12 @@ import CMALogo from '../images/logo_cma.js';
 import FacebookLogo from '../images/logo_facebook.js';
 import InstagramLogo from '../images/logo_instagram.js';
 import TermsAndConditionsLogo from '../images/logo_form_pdf.js';
+
+//SERVICES LOGOS
+import OceanFreightLogo from '../images/logo_services_ocean';
+import RoadTransportationLogo from '../images/logo_services_road';
+import AirFreightLogo from '../images/logo_services_air';
+import SupplyChainLogo from '../images/logo_services_supply';
 
 const Home = () =>{
 
@@ -42,6 +50,8 @@ const Home = () =>{
                             " and at the same time had built up a strong credentials in this ever growing Shipping Industry.";
     const bodyTitleText = 'WE PROVIDE FULL PREMIUM SERVICES IN';
     const formTitleText = 'REGISTER & KICK START';
+    const highImpactText = 'The next time you send out cargo, whether to Cairo, Chicago or Calicut, choose a logistics provider who goes the extra mile,' +  
+                            ' has a dedicated staff ready to answer your queries, and offers competitive prices for comprehensive services. That’s Freight Consolidators for you.'
 
 
     const submitForm = () => {
@@ -136,7 +146,10 @@ const Home = () =>{
                     <br/>
                     <h2 className = 'home-title-secondary'>FREIGHT FORWARDER'S OFFERING PREMIUM LOGISTIC SERVICES</h2>
                     <h2 className = 'home-title-secondary'>FOR EXPORTER'S WORLDWIDE</h2>
-                    <button id = 'home-read-more-button' onClick = { goToAboutSection }>READ MORE</button>
+                    <div id = 'home-cover-buttons-wrapper'>
+                        <button className = 'home-request-a-quote-button'>REQUEST A QUOTE</button>
+                        <button id = 'home-read-more-button' onClick = { goToAboutSection }>READ MORE</button>
+                    </div>
                 </div>
                 <div id = 'home-social-logos-grid'>
                     <a id = 'home-facebook-wrapper' href = 'https://www.facebook.com/nidsanshipping?mibextid=LQQJ4d' target = '_blank' rel = 'noreferrer'>
@@ -169,7 +182,6 @@ const Home = () =>{
             <div id = 'home-body'>
                 <h3 className = 'home-about-title'> { bodyTitleText } </h3>
                 <h3 className = 'home-about-title'>FULL CONTAINER LOAD (FCL) & ROLL-ON/ROLL-OFF (RO/RO)</h3>
-                {/* <p id = 'home-about-text'> {aboutText} </p> */}
                 <div id = 'home-about-text'>
                     <p> { aboutTextOne } </p>
                     <br/>
@@ -177,8 +189,44 @@ const Home = () =>{
                 </div>
             </div>
             <img id = 'home-body-image' src = { homeBodyImage } alt = ''/>
-            {/* <Modal showModal = { showModal } toggleModal = { toggleModal } 
-                    toggleHasName = { hasName } toggleHasEmail = { hasEmail } toggleHasPhone = { hasPhone }/> */}
+            <div id = 'home-body-services-wrapper'>
+                <p id = 'home-body-services-title'>SHIP FASTER, SHIP SMARTER.</p>
+                <p id = 'home-body-services-title-secondary'>Flexible transfers across multiple modes of transport.</p>
+                <div id = "home-body-services-logos-wrapper">
+                    <div className = 'home-body-services-logo-text-wrapper'>
+                        <OceanFreightLogo/>
+                        <p className = 'home-body-services-logo-text' >Ocean Freight</p>
+                    </div>
+                    <div className = 'home-body-services-logo-text-wrapper'>
+                        <RoadTransportationLogo/>
+                        <p className = 'home-body-services-logo-text'>Road Transportation</p>
+                    </div>
+                    <div className = 'home-body-services-logo-text-wrapper'>
+                        <AirFreightLogo/>
+                        <p className = 'home-body-services-logo-text'>Air Freight</p>
+                    </div>
+                    <div className = 'home-body-services-logo-text-wrapper'>
+                        <SupplyChainLogo/>
+                        <p className = 'home-body-services-logo-text'>Supply Chain</p>
+                    </div>
+                </div>
+                <button id = 'home-body-services-view-all-button'>View All Services</button>
+            </div>
+            <div id = 'home-body-ship-confidently-wrapper'>
+                <img id = 'home-body-ship-confidently-image' src = { homeShipConfidentlyImage } alt = ''/>
+                <div id = 'home-body-ship-confidently-text-wrapper'>
+                    <p id = 'home-body-ship-confidently-title'>Ship confidently. Ship smarter. The Freight Consolidators way.</p>
+                    <p id = 'home-body-ship-confidently-text'>We bring our best efforts to bring out the best in you and bring the world within your reach. Be it any part of the world, we connect you with the world through the many connections we've fostered over the past three decades. In our journey forward, we’re all set to establish more connections, open up more trade routes and facilitate more opportunities for you.</p>
+                </div>
+            </div>
+            <div id = 'home-body-high-impact-wrapper'>
+                <img id = 'home-body-high-impact-image' src = { homeHighImpactImage } alt = ''></img>
+                <div id = 'home-body-high-impact-text-wrapper'>
+                    <p id = 'home-body-high-impact-title'>High-impact services <br/> that keeps you moving.</p>
+                    <p id = 'home-body-high-impact-text'>{ highImpactText }</p>
+                    <button id = 'home-body-high-impact-request-a-quote-button' className = 'home-request-a-quote-button'>REQUEST A QUOTE</button>
+                </div>
+            </div>
             <div id = 'home-form'>
                 <h3 id = 'home-form-title'> { formTitleText } </h3>
                 <div id = 'home-form-input-grid'>

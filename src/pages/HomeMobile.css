@@ -35,6 +35,21 @@
         line-height: var(--twenty-four-px);
     }
   
+    #home-cover-buttons-wrapper{
+
+    }
+
+    .home-request-a-quote-button{
+        /* Size*/
+        height: 6vh;
+        width: 35vw;
+        margin-top: 3.2vh;
+    
+        /* Font */
+        font-size: var(--twelve-px);
+        letter-spacing: 3px;
+    }
+
     #home-read-more-button{
         /* Size*/
         height: 6vh;
@@ -46,15 +61,15 @@
         letter-spacing: 3px;
     }
 
-    #home-social-logos-grid{}
+    /* #home-social-logos-grid{} */
 
-    #home-facebook-wrapper{}
+    /* #home-facebook-wrapper{} */
 
-    #home-facebook-logo{}
+    /* #home-facebook-logo{} */
 
-    #home-instagram-wrapper{}
+    /* #home-instagram-wrapper{} */
 
-    #home-instagram-logo{}
+    /* #home-instagram-logo{} */
 
     #home-company-logos-wrapper{
         /* Size */
@@ -126,9 +141,192 @@
         /* Size*/
         width: 92.15vw;
     }
-    
-    #home-form{
 
+    #home-body-services-wrapper{
+        /* Display/Position */
+        margin-top: 3.2vh;
+    }
+
+    #home-body-services-title{
+        /* Font */
+        font-size: var(--nineteen-px);
+        line-height: var(--twenty-four-px);
+    }
+    
+    #home-body-services-title-secondary{
+        /* Font */
+        font-size: var(--sixteen-px);
+        line-height: var(---twenty-px);
+    }
+
+    #home-body-services-logos-wrapper{
+        /* Display/Position */
+        margin-top: 2vh;
+        gap: 0px;
+    }
+
+    #home-body-services-logo-text-wrapper{
+        /* Display/Position */
+        gap: 0px;
+    }
+
+    .home-body-services-logo-text{
+        /* Font */
+        font-size: var(--ten-px);
+        line-height: var(--twelve-px);
+    }
+
+    #ocean-freight-logo{
+        /* Size */
+        width: calc(21.5 + 0.1vw);
+        height: calc(20.5px + 0.1vh);
+      }
+      
+      #road-transportation-logo{
+        /* Size */
+        width: calc(20.5px + 0.1vw);
+        height: calc(19.5px + 0.1vh);
+      }
+      
+      #air-freight-logo{
+        /* Size */
+        width: calc(21.5 + 0.1vw);
+        height: calc(20.5px + 0.1vh);
+      }
+      
+      #supply-chain-logo{
+        /* Size */
+        width: calc(20.5px + 0.1vw);
+        height: calc(19.5px + 0.1vh);
+      }
+    
+      #home-body-services-view-all-button{
+        /* Display/Position */
+        z-index: 1;
+        margin-top: 2vh;
+
+        /* Size*/
+        height: 6vh;
+        width: 55vw;
+        
+        /* Font */
+        font-size: var(--twelve-px);
+      }
+
+      #home-body-ship-confidently-wrapper{
+        /* Display/Position */
+        margin: auto;
+        margin-top: 3.5vh;
+
+        /*Size*/
+        width: 100vw;
+      }
+      
+      #home-body-ship-confidently-image{
+        /* Display/Position */
+        grid-area: 1/1;
+        margin: auto;
+        /*Size*/
+        width: 80vw;
+      }
+
+      #home-body-ship-confidently-text-wrapper{
+        /* Display/Position */
+        grid-area: 2/1;
+        margin-top: 1vh;
+      }
+
+      #home-body-ship-confidently-title{
+        /* Display/Position */
+        margin: auto;
+
+        /*Size*/
+        width: 80vw;
+
+        /* Font */
+        font-family: 'TT Firs Neue Bold';
+        font-weight: bold;
+        font-size: var(--nineteen-px);
+        line-height: var(--twenty-four-px);
+        text-align: center;
+      }
+      
+      #home-body-ship-confidently-text{
+        /* Display/Position */
+        margin: auto;
+        margin-top: 2vh;
+
+        /*Size*/
+        width: 80vw;
+      
+        /* Font */
+        text-align: center;
+        font-size: var(--twelve-px);
+        line-height: var(--sixteen-px);
+      }
+
+      #home-body-high-impact-wrapper{
+        /* Display/Position */
+        margin-top: 3.5vh;
+      }
+
+      #home-body-high-impact-image{
+        /* Display/Position */
+
+        /* Size */
+        width: 80vw;
+      }
+      
+      #home-body-high-impact-text-wrapper{
+        /* Display/Position */
+        display: flex;
+        flex-direction: column;
+        grid-area: 2/1;
+        margin: auto;
+        margin-top: 1vh;
+
+        /* Size */
+        width: 80vw;
+      }
+      
+      #home-body-high-impact-title{
+        /* Display/Position */
+
+        /* Font */
+        color: var(--nidsan-blue);
+        font-family: 'TT Firs Neue Bold';
+        font-weight: bold;
+        font-size: var(--nineteen-px);
+        line-height: var(--twenty-four-px);
+        text-align: center;
+      }
+      
+      #home-body-high-impact-text{
+        /* Display/Position */
+        margin-top: 1vh;
+
+        /* Font */
+        color: var(--nidsan-blue);
+        text-align: center;
+        font-size: var(--twelve-px);
+        line-height: var(--sixteen-px);
+      }
+
+      #home-body-high-impact-request-a-quote-button{
+        /* Display/Position */
+        margin: auto;
+        margin-top: 1vh;
+        /* Size*/
+        height: 6vh;
+        width: 55vw;
+        
+        /* Font */
+        font-size: var(--twelve-px);
+      }
+
+    #home-form{
+        /* Display/Position */
+        margin-top: 3.5vh;
     }
     
     #home-form-title{
@@ -143,7 +341,7 @@
         gap: 0;
         /* Size*/
         margin: auto;
-        margin-top: 6vh;
+        margin-top: 1.5vh;
 
         /* Font */
         font-size: var(--twelve-px);
@@ -154,27 +352,21 @@
         line-height: var(--thirty-px);
     }
     
-    .home-form-text-input{
-
-    }
+    /* .home-form-text-input{} */
     
-    .home-form-text-input::placeholder{
-
-    }
+    /* .home-form-text-input::placeholder{} */
     
-    .home-form-text-input:focus{
-
-    }
+    /* .home-form-text-input:focus{} */
     
-    .home-form-input-warning{
-    
-    }
+    /* .home-form-input-warning{} */
     
     #home-form-submit-grid{
         /* Display/Position */
         justify-items: center;
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 5vh;
+        margin-top: 3.5vh;
+        margin-bottom: 3.5vh;
+        gap: 1vh;
 
         /* Font */
         font-size: var(--sixteen-px);
@@ -197,7 +389,6 @@
     #home-form-submit-button{
         /* Display/Position */
         grid-area: 2/1;
-
         /* Size*/
         height: 6vh;
         width: 40vw;
@@ -206,15 +397,9 @@
         font-size: var(--sixteen-px);
     }
     
-    #home-form-submit-button:hover{
+    /* #home-form-submit-button:hover{} */
     
-    }
+    /* #home-form-submit-button:before{} */
     
-    #home-form-submit-button:before{
-    
-    }
-    
-    #home-form-submit-button:hover:before{
-
-    }
+    /* #home-form-submit-button:hover:before{} */
 }
