@@ -701,12 +701,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  /* gap: 2vw; */
-
-  /* Size*/
   margin: auto;
   margin-top: calc(100px + 0.1vh);
   margin-bottom: calc(80px + 0.1vh);
+
+  /* Size*/
   width: 80vw;
   
   /* Font */

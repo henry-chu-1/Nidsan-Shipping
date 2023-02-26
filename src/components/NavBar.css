@@ -25,9 +25,79 @@
     top: 3vh;
     right: 5vw;
     gap: 2vw;
+    z-index: 1;
 
     /* Font */
     font-size: var(--sixteen-px);
-    outline: red solid 1px;
 }
 
+.nav-bar-link{
+    /* Display/Position */
+    z-index: 5;
+
+    /* Font */
+    font-size: var(--sixteen-px);
+    line-height: var(--twenty-px);
+    text-decoration: none;
+    color: var(--nidsan-blue);
+
+    /* Animation */
+    transition: ease-out 0.5s;
+}
+
+.nav-bar-link:hover{
+    /* Display/Position */
+    cursor: pointer;
+    
+    /* Color */
+    color: var(--nidsan-blue);
+    
+    
+    /* Animation */
+    transform: translateY(0vh);
+  }
+  
+.nav-bar-link:before{
+    /* Display/Position */
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s all ease;
+    content: "";
+    background-color: var(--nidsan-gold);
+}
+  
+.nav-bar-link:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    font-weight: bold;
+}
+ 
+#nav-bar-menu-dropdown{
+    /* Display/Position */
+    position: absolute;
+    top: 3vh;
+    right: 5vw;
+    gap: 2vw;
+    z-index: 5;
+
+    /* Font */
+    font-size: var(--sixteen-px);
+
+    visibility: hidden;
+}
+
+#nav-bar-menu-background{
+    visibility: hidden;
+}
+
+#nav-bar-menu-mobile{
+
+    visibility: hidden;
+}

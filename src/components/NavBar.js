@@ -1,92 +1,52 @@
 import { Link } from 'react-router-dom'
 import './NavBar.css'
+import './NavBarMobile.css'
 import NidsanLogo from '../images/logo_nidsan.js'
 
-const NavBar = (props) => {
+const NavBar = () => {
+
+    const showMenu = () => {
+        const navBarManuBackground = document.getElementById('nav-bar-menu-background');
+        const navBarManuMobile = document.getElementById('nav-bar-menu-mobile');
+        navBarManuBackground.style.visibility = 'visible';
+        navBarManuBackground.className = 'nav-bar-menu-background-visible';
+        navBarManuMobile.style.visibility = 'visible';
+        navBarManuMobile.className = 'nav-bar-menu-mobile-visible';
+    }
+
+    const hideMenu = () => {
+        const navBarManuBackground = document.getElementById('nav-bar-menu-background');
+        navBarManuBackground.className = 'nav-bar-menu-background-hidden';
+        const navBarManuMobile = document.getElementById('nav-bar-menu-mobile');
+        navBarManuMobile.className = 'nav-bar-menu-mobile-hidden';
+    }
 
     return(
         <div id = 'nav-bar'>
-            <Link
-                className = {props.currentPage === 'home' ? 'current' : 'inactive'}
-                to= '/' 
-                onClick={() => props.setCurrentPage('home')}>
+            <Link to= '/' >
                 <NidsanLogo/>
             </Link>
             <nav id = 'nav-bar-menu'>
-                {/* <Link
-                    className = {props.currentPage === 'services' ? 'current' : 'inactive'}
-                    to= '/services'
-                    onClick={() => props.setCurrentPage('services')}>
-                    <span>Services</span> 
-                </Link> */}
-                <span>Services</span>
-                <span>Network</span>
-
-                    {/* <li>
-                        <Link
-                            className = {props.currentPage === 'home' ? 'current' : 'inactive'}
-                            to= '/' 
-                            onClick={() => props.setCurrentPage('home')}>
-                            <span>Home</span>
+                <Link className = 'nav-bar-link' to = '/services'>
+                    Services
+                </Link>
+                <Link className = 'nav-bar-link' to = '/network'>
+                    Network
+                </Link>
+            </nav>
+            <nav id = 'nav-bar-menu-dropdown'>
+                <p onClick = { showMenu } >Menu ☰</p>
+                <div id = 'nav-bar-menu-background' className = 'nav-bar-menu-background-hidden' onClick = { hideMenu }/>
+                <div id = 'nav-bar-menu-mobile' className = 'nav-bar-menu-mobile-hidden'>
+                    <nav id = 'nav-bar-menu-options'>
+                        <Link className = 'nav-bar-link' to = '/services' onClick = { hideMenu }>
+                            Services
                         </Link>
-                    </li> */}
-                    {/* <li>
-                        <Link
-                            className = {props.currentPage === 'services' ? 'current' : 'inactive'}
-                            to= '/services'
-                            onClick={() => props.setCurrentPage('services')}>
-                            <span>Services</span> 
+                        <Link className = 'nav-bar-link' to = '/network' onClick = { hideMenu }>
+                            Network
                         </Link>
-                    </li>
-                    <li>
-                        <Link
-                            className = {props.currentPage === 'network' ? 'current' : 'inactive'}
-                            to= '/network'
-                            onClick={() => props.setCurrentPage('network')}>
-                            <span>Network</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            className = {props.currentPage === 'containers' ? 'current' : 'inactive'}
-                            to= '/containers'
-                            onClick={() => props.setCurrentPage('containers')}>
-                            <span>Container's</span>
-                        </Link>
-                    </li>
-                    <li>
-                        <div className = "dropdown">
-                            <button className = "dropbtn">Tracking</button>
-                                <div className = "dropdown-content">
-                                    <Link
-                                        className = {props.currentPage === 'tracking' ? 'current' : 'inactive'}
-                                        to= '/tracking'
-                                        onClick={ () => props.carrierClicked('ACL Cargo') }>
-                                        <span>ACL Cargo</span>
-                                    </Link>
-                                    <Link
-                                        className = {props.currentPage === 'tracking' ? 'current' : 'inactive'}
-                                        to= '/tracking'
-                                        onClick={() => props.carrierClicked('CMA-CGM') }>
-                                        <span>CMA-CGM</span>
-                                    </Link>
-                                    <Link
-                                        className = {props.currentPage === 'tracking' ? 'current' : 'inactive'}
-                                        to= '/tracking'
-                                        onClick={() => props.carrierClicked('MAERSK')}>
-                                        <span>MAERSK</span>
-                                    </Link>
-                                </div>
-                        </div>
-                    </li> */}
-                    {/* <li>
-                        <Link
-                            className = {props.currentPage === 'contact' ? 'current' : 'inactive'}
-                            to= '/contact'
-                            onClick={() => props.setCurrentPage('contact')}>
-                            <span>Contact</span>
-                        </Link>
-                    </li> */}
+                    </nav>
+                </div>
             </nav>
         </div>
     )
