@@ -5,17 +5,23 @@ import NidsanLogo from '../images/logo_nidsan.js'
 const NavBar = (props) => {
 
     return(
-        <div id = 'navBar'>
+        <div id = 'nav-bar'>
             <Link
                 className = {props.currentPage === 'home' ? 'current' : 'inactive'}
                 to= '/' 
                 onClick={() => props.setCurrentPage('home')}>
                 <NidsanLogo/>
             </Link>
-            <nav id = 'navBar-menu'>
+            <nav id = 'nav-bar-menu'>
+                {/* <Link
+                    className = {props.currentPage === 'services' ? 'current' : 'inactive'}
+                    to= '/services'
+                    onClick={() => props.setCurrentPage('services')}>
+                    <span>Services</span> 
+                </Link> */}
+                <span>Services</span>
+                <span>Network</span>
 
-
-                <ul>
                     {/* <li>
                         <Link
                             className = {props.currentPage === 'home' ? 'current' : 'inactive'}
@@ -81,7 +87,6 @@ const NavBar = (props) => {
                             <span>Contact</span>
                         </Link>
                     </li> */}
-                </ul>
             </nav>
         </div>
     )

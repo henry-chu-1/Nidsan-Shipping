@@ -1,4 +1,4 @@
-#navBar{
+#nav-bar{
 
     /* Size*/
     width: 100%;
@@ -18,20 +18,17 @@
     height: 80px;
 }
 
-@media(max-width: 900px){
+#nav-bar-menu{
+    /* Display/Position */
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    top: 3vh;
+    right: 5vw;
+    gap: 2vw;
 
-    #nidsan-logo{
-        /* Display/Position */
-        position: absolute;
-        top: 2.75%;
-        left: 2.75%;
-        z-index: 1;
-        margin: 0;
-        
-        /* Size*/
-        padding: 0;
-        width: 92.75px;
-        height: 53px;
-    }
-
+    /* Font */
+    font-size: calc(16px + 0.2vw);
+    outline: red solid 1px;
 }
+

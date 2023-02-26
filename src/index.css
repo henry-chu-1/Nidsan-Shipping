@@ -27,11 +27,49 @@
   font-style: normal;
 }
 
+:root{
+  /* Color */
+  --nidsan-blue: #073C52;
+  --nidsan-gold: #BC955B;
+  --nidsan-light-blue: #D6E5E8;
+
+  /* Fonts */
+  /* --ten-px: 10px;
+  --twelve-px: 12px;
+  --sixteen-px: 16px;
+  --nineteen-px: 19px;
+  --twenty-px: 20px;
+  --twenty-four-px: 24px;
+  --thirty-px: 30px;
+  --thirty-four-px: 34px;
+  --forty-px: 40px;
+  --sixty-px: 60px; */
+
+  --ten-px: calc(10px + 0.05vw + 0.05vh);
+  --twelve-px: calc(12px + 0.05vw + 0.05vh);
+  --fourteen-px: calc(14px + 0.05vw + 0.05vh);
+  --sixteen-px: calc(16px + 0.05vw + 0.05vh);
+  --nineteen-px: calc(19px + 0.05vw + 0.05vh);
+  --twenty-px: calc(20px + 0.05vw + 0.05vh);
+
+  /* --twenty-px: calc(20px + 0.1vw + 0.1vh); */
+  --twenty-four-px: calc(24px + 0.05vw + 0.05vh);
+  --thirty-px: calc(30px + 0.05vw + 0.05vh);
+  --thirty-four-px: calc(34px + 0.05vw + 0.05vh);
+  --forty-px: calc(40px + 0.05vw + 0.05vh);
+  --forty-five-px: calc(45px + 0.05vw + 0.05vh);
+  --sixty-px: calc(60px + 0.05vw + 0.05vh);
+
+
+  /* Social Logo Sizes */
+  --social-logo-size: calc(18px + 0.05vw + 0.05vh);
+}
+
 *{
   margin: 0;
   padding: 0;
   font-family: 'TT Firs Neue';
-  color: #073C52;
+  color: var(--nidsan-blue);
   /* outline: red solid 1px; */
 }
 

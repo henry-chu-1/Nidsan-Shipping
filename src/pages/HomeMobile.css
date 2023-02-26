@@ -1,4 +1,4 @@
-@media(max-width: 900px){
+@media(max-width: 975px){
 
     #home-header{  
         /* Size */
@@ -8,16 +8,6 @@
     }
   
     #home-cover-image{
-        /* Display/Position */
-        z-index: -2;
-        overflow: hidden;
-        justify-self: center;
-        
-        /* Size*/
-        min-height: 110%;
-        width: auto;
-        min-width: 100%;
-        
         /* Animation */
         transform: translateY(-10%);
         animation-name: zoomOutCover;
@@ -25,54 +15,49 @@
         animation-timing-function: ease-in-out;
     }
   
-    #home-title{
-        /* Display/Position */
-        top: 25%;
-        
-        /* Size*/
-        width: 100vw;
-        height: 85%;
-    }
-  
+    #home-title{}
+
     #home-title-first-line{
         /* Font */
-        font-size: calc(45px + 0.2vw);
-        line-height: calc(45px + 0.2vw);
+        font-size: var(--forty-five-px);
+        line-height: var(--forty-five-px);
     }
   
     #home-title-second-line{
         /* Font */
-        font-size: calc(45px + 0.2vw);
-        line-height: calc(45px + 0.2vw);
+        font-size: var(--forty-five-px);
+        line-height: var(--forty-five-px);
     }
       
-    #home-title-third-line{
+    .home-title-secondary{
         /* Font */
-        font-size: calc(19px + 0.2vw);
-        line-height: calc(24.51px + 0.2vw);
-    }
-      
-    #home-title-fourth-line{
-        /* Font */
-        font-size: calc(19px + 0.2vw);
-        line-height: calc(24.51px + 0.2vw);
+        font-size: var(--nineteen-px);
+        line-height: var(--twenty-four-px);
     }
   
     #home-read-more-button{
         /* Size*/
         height: 6vh;
-        width: 50vw;
+        width: 35vw;
         margin-top: 3.2vh;
     
         /* Font */
-        font-size: calc(14px + 0.2vw);
+        font-size: var(--twelve-px);
         letter-spacing: 3px;
     }
-    
+
+    #home-social-logos-grid{}
+
+    #home-facebook-wrapper{}
+
+    #home-facebook-logo{}
+
+    #home-instagram-wrapper{}
+
+    #home-instagram-logo{}
+
     #home-company-logos-wrapper{
         /* Size */
-        margin: auto;
-        margin-top: 3.29vh;
         width: 80vw;
     }
 
@@ -127,14 +112,14 @@
 
     .home-about-title{
         /* Font */ 
-        font-size: calc(19px + 0.2vw);
-        line-height: calc(24.51px + 0.2vw);
+        font-size: var(--nineteen-px);
+        line-height: var(--twenty-four-px);
     }
     
     #home-about-text{
         /* Font */ 
-        font-size: calc(12px + 0.2vw);
-        line-height: calc(15.52px + 0.2vw);
+        font-size: var(--twelve-px);
+        line-height: var(--sixteen-px);
     }
     
     #home-body-image{
@@ -148,8 +133,8 @@
     
     #home-form-title{
         /* Font */ 
-        font-size: calc(19px + 0.2vw);
-        line-height: calc(24.51px + 0.2vw);
+        font-size: var(--nineteen-px);
+        line-height: var(--twenty-four-px);
     }
     
     #home-form-input-grid{
@@ -161,12 +146,12 @@
         margin-top: 6vh;
 
         /* Font */
-        font-size: calc(12px + 0.2vw);
+        font-size: var(--twelve-px);
     }
     
     .home-form-input-card{
         /* Font */
-        line-height: calc(30px + 0.2vh);
+        line-height: var(--thirty-px);
     }
     
     .home-form-text-input{
@@ -192,17 +177,33 @@
         margin-top: 5vh;
 
         /* Font */
-        font-size: calc(16px + 0.2vw);
+        font-size: var(--sixteen-px);
     }
     
-    #home-form-terms-and-conditions{
+    #home_form_pdf_logo{
+        /* Display/Position */
+        grid-area: 1/1;
+        align-self: center;
+    }
 
+    #home-form-terms-and-conditions{
+        /* Display/Position */
+        justify-self: center;
+
+        /* Font */
+        font-size: var(--sixteen-px);
     }
     
     #home-form-submit-button{
+        /* Display/Position */
+        grid-area: 2/1;
+
         /* Size*/
         height: 6vh;
-        width: 50vw;
+        width: 40vw;
+        
+        /* Font */
+        font-size: var(--sixteen-px);
     }
     
     #home-form-submit-button:hover{

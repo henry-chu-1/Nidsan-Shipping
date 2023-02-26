@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import './Footer.css'
 import './FooterMobile.css'
 
-import FooterEmailLogo from '../images/FooterEmailLogo.js';
-import FooterPhoneLogo from '../images/FooterPhoneLogo.js';
+import FooterEmailLogo from '../images/logo_footer_email.js';
+import FooterPhoneLogo from '../images/logo_footer_phone.js';
 import NidsanWhiteLogo from '../images/NidsanLogoWhite.js'
 
 const Footer = (props) => {

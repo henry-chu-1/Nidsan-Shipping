@@ -17,6 +17,7 @@ import CMALogo from '../images/logo_cma.js';
 //SOCIAL LOGOS
 import FacebookLogo from '../images/logo_facebook.js';
 import InstagramLogo from '../images/logo_instagram.js';
+import TermsAndConditionsLogo from '../images/logo_form_pdf.js';
 
 const Home = () =>{
 
@@ -32,6 +33,13 @@ const Home = () =>{
                         " We are committed to providing customers with level of excellence and quality, utilizing industry professionals." + 
                         " The directors with their vast experience and exposure of the Shipping Industry have managed to ship worldwide" + 
                         " and at the same time had built up a strong credentials in this ever growing Shipping Industry.";
+    const aboutTextOne =  "NIDSAN SHIPPING INC. is a FREIGHT FORWARDING and an NVOCC (NON VESSEL OPERATING COMMON CARRIERS ) company based in New York, USA." + 
+                            " This was founded in 1998 and since then, it has been a memorable journey till date." + 
+                            " In a short span of time, our company has maintained a steady growth rate of its business activities.";
+    const aboutTextTwo =  "The company began it's operation's from New York, with the view to serve this ever growing trade between USA and other parts of the World." + 
+                            " We are committed to providing customers with level of excellence and quality, utilizing industry professionals." + 
+                            " The directors with their vast experience and exposure of the Shipping Industry have managed to ship worldwide" + 
+                            " and at the same time had built up a strong credentials in this ever growing Shipping Industry.";
     const bodyTitleText = 'WE PROVIDE FULL PREMIUM SERVICES IN';
     const formTitleText = 'REGISTER & KICK START';
 
@@ -78,8 +86,7 @@ const Home = () =>{
         if(formInputCountry == ""){
             countryString += "(None Given)";
         }
-        if(!hasName || !hasEmail || !hasPhone){
-            console.log("Failed");
+        if(hasName || hasEmail || hasPhone){
             return;
         }
 
@@ -127,8 +134,8 @@ const Home = () =>{
                     <h1 id = 'home-title-first-line'>JOURNEYING THE HIGH SEAS</h1>
                     <h1 id = 'home-title-second-line'>GLOBALLY.</h1>
                     <br/>
-                    <h2 id = 'home-title-third-line'>FREIGHT FORWARDER'S OFFERING PREMIUM LOGISTIC SERVICES</h2>
-                    <h2 id = 'home-title-fourth-line'>FOR EXPORTER'S WORLDWIDE</h2>
+                    <h2 className = 'home-title-secondary'>FREIGHT FORWARDER'S OFFERING PREMIUM LOGISTIC SERVICES</h2>
+                    <h2 className = 'home-title-secondary'>FOR EXPORTER'S WORLDWIDE</h2>
                     <button id = 'home-read-more-button' onClick = { goToAboutSection }>READ MORE</button>
                 </div>
                 <div id = 'home-social-logos-grid'>
@@ -162,7 +169,12 @@ const Home = () =>{
             <div id = 'home-body'>
                 <h3 className = 'home-about-title'> { bodyTitleText } </h3>
                 <h3 className = 'home-about-title'>FULL CONTAINER LOAD (FCL) & ROLL-ON/ROLL-OFF (RO/RO)</h3>
-                <p id = 'home-about-text'> { aboutText } </p>
+                {/* <p id = 'home-about-text'> {aboutText} </p> */}
+                <div id = 'home-about-text'>
+                    <p> { aboutTextOne } </p>
+                    <br/>
+                    <p> { aboutTextTwo } </p>
+                </div>
             </div>
             <img id = 'home-body-image' src = { homeBodyImage } alt = ''/>
             {/* <Modal showModal = { showModal } toggleModal = { toggleModal } 
@@ -200,7 +212,7 @@ const Home = () =>{
                 </div>
             </div>
             <div id = 'home-form-submit-grid'>
-                <p id = 'home-form-terms-and-conditions'>TERMS AND CONDITIONS</p>
+                <p id = 'home-form-terms-and-conditions'><TermsAndConditionsLogo/> TERMS AND CONDITIONS</p>
                 <button id = 'home-form-submit-button' onClick = {submitForm}>SUBMIT</button>
             </div>
             <Footer footerClass = 'footer'/>
