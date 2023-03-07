@@ -91,7 +91,36 @@ code {
     monospace;
 }
 
-@media(max-width: 900px){
+.header{
+  /* Display/Position */
+  display: grid;
+  position: relative;
+  overflow: hidden;
+
+  /* Size */
+  max-height: 110vh;
+  height: 100vh;
+}
+
+.cover-image{
+  /* Display/Position */
+  z-index: -2;
+  overflow: hidden;
+  justify-self: center;
+  align-self: center;
+
+  /* Size*/
+  width: auto;
+  height: 120vh;
+  min-width: 100vw;
+
+  /* Animation */
+  transform: translateY(-10%);
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+@media(max-width: 975px){
 
 }
 

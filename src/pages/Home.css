@@ -1,12 +1,12 @@
 #home-header{
   /* Display/Position */
-  display: grid;
+  /* display: grid;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; */
 
   /* Size */
-  max-height: 110vh;
-  height: 100vh;
+  /* max-height: 110vh;
+  height: 100vh; */
 }
 
 #home-header > *{
@@ -16,20 +16,20 @@
   
 #home-cover-image{
   /* Display/Position */
-  z-index: -2;
+  /* z-index: -2;
   overflow: hidden;
   justify-self: center;
-  align-self: center;
+  align-self: center; */
   /* Size*/
-  min-height: 120vh;
+  /* min-height: 120vh;
   min-width: 100vw;
-  width: auto;
+  width: auto; */
 
   /* Animation */
-  transform: translateY(-10%);
+  /* transform: translateY(-10%); */
   animation-name: zoomOutCover;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
+  /* animation-duration: 5s;
+  animation-timing-function: ease-in-out; */
 }
 
 @keyframes zoomOutCover{
@@ -101,7 +101,7 @@
   /* Color */
   color: var(--nidsan-white);
   background-color: var(--nidsan-blue);
-  border: none;
+  border: 2px solid var(--nidsan-blue);
 
   /* Font */
   font-size: var(--twelve-px);

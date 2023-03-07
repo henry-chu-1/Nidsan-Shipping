@@ -13,6 +13,14 @@ const Footer = (props) => {
         window.location.href = "mailto:EXPORTS@NIDSANSHIPPING.COM";
     }
 
+    const changePages = (color) =>{
+        window.scroll({
+            top: 0,
+            behavior: 'smooth'
+        });
+        props.setLogoColor(color)
+    }
+
     return(
         <div className = {props.footerClass}>
             <div id = 'footer-box'>
@@ -21,12 +29,16 @@ const Footer = (props) => {
                 </div>
                 <div id = 'footerPageLinks'>
                     <Link
-                        to= '/' 
-                        onClick={() => props.setCurrentPage('home')}>
+                        to = '/' 
+                        onClick={() => changePages('main')}>
                         <p className = 'footerText'>HOME</p>
                     </Link>
                     <p className = 'footerText'>ABOUT</p>
-                    <p className = 'footerText'>SERVICES</p>
+                    <Link
+                        to = '/services'
+                        onClick= { () => changePages('white')}>
+                        <p className = 'footerText'>SERVICES</p>
+                    </Link>
                     <p className = 'footerText'>CONTACT</p>
                 </div>
                 <div id = 'footerContactInfo'>

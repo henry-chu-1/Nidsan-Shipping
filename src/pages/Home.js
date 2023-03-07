@@ -3,8 +3,8 @@ import './Home.css';
 import './HomeMobile.css';
 
 //HOME PAGE COMPONENT / IMAGES / CSS IMPORTS
-import Modal from '../components/Modal'
-import Footer from '../components/Footer';
+// import Modal from '../components/Modal'
+// import Footer from '../components/Footer';
 import homeCoverImage from '../images/image_home_cover.png';
 import homeBodyImage from '../images/image_home_body.png';
 import homeShipConfidentlyImage from '../images/image_home_ship_confidently.png'
@@ -86,7 +86,6 @@ const Home = () =>{
         else{
             toggleHasPhone(true);
         }
-
         if(formInputAddress == ""){
             addressString += "(None Given)";
         }
@@ -96,7 +95,8 @@ const Home = () =>{
         if(formInputCountry == ""){
             countryString += "(None Given)";
         }
-        if(hasName || hasEmail || hasPhone){
+        console.log("Reachs here");
+        if(!hasName || !hasEmail || !hasPhone){
             return;
         }
 
@@ -107,6 +107,8 @@ const Home = () =>{
                             addressString + 
                             cityString +
                             countryString;
+
+        console.log("Sending email...");
 
         fetch('https://www.nidsanshipping.com/contact.php', {
             method: 'POST',
@@ -138,8 +140,8 @@ const Home = () =>{
 
     return(
         <div id = 'home-page'> 
-            <div id = 'home-header'>
-                <img id = 'home-cover-image' src = { homeCoverImage } alt = ''/>
+            <div id = 'home-header' className = 'header'>
+                <img id = 'home-cover-image' className = 'cover-image' src = { homeCoverImage } alt = ''/>
                 <div id = 'home-title'>
                     <h1 id = 'home-title-first-line'>JOURNEYING THE HIGH SEAS</h1>
                     <h1 id = 'home-title-second-line'>GLOBALLY.</h1>
@@ -261,9 +263,9 @@ const Home = () =>{
             </div>
             <div id = 'home-form-submit-grid'>
                 <p id = 'home-form-terms-and-conditions'><TermsAndConditionsLogo/> TERMS AND CONDITIONS</p>
-                <button id = 'home-form-submit-button' onClick = {submitForm}>SUBMIT</button>
+                <button id = 'home-form-submit-button' onClick = { submitForm }>SUBMIT</button>
             </div>
-            <Footer footerClass = 'footer'/>
+            {/* <Footer footerClass = 'footer'/> */}
         </div>
     )
 }

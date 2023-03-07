@@ -8,22 +8,25 @@ import About from './pages/About'
 
 import Services from './pages/Services'
 import Contact from './pages/Contact'
+import Footer from './components/Footer'
 // import Tracking from './pages/Tracking'
 
 function App() {
-  // const [currentPage, setCurrentPage] = useState('home')
-  // const [currentCarrier, setCurrentCarrier] = useState(null)
-
-  // function carrierClicked (carrier)  {
-  //   setCurrentPage('tracking')
-  //   setCurrentCarrier(carrier)
-  // }
+  const [logoColor, setLogoColor] = useState(() => {
+    if(window.location.pathname == '/services'){
+      return 'white'
+    }
+    else{
+      return 'main'
+    }
+  });
 
   return (
     <div className="App">
+      {console.log(logoColor)}
       <BrowserRouter>
         <div id = 'navBarPageStack'>
-          <NavBar/>
+          <NavBar logoColor = {logoColor} setLogoColor = {setLogoColor}/>
           <div className = 'pages'>
             <Routes>
               <Route path = '/' element = {<Home />}/>
@@ -35,7 +38,8 @@ function App() {
               {/* <Route path = '/about' element = {<About />}/> */}
               <Route path = '*' element = {<Navigate to='/' />}/>
             </Routes>
-          </div> 
+          </div>
+          <Footer footerClass = 'footer' setLogoColor = {setLogoColor}/> 
         </div>
       </BrowserRouter>
     </div>

@@ -39,7 +39,7 @@
     font-size: var(--sixteen-px);
     line-height: var(--twenty-px);
     text-decoration: none;
-    color: var(--nidsan-blue);
+    color: inherit;
 
     /* Animation */
     transition: ease-out 0.5s;
@@ -50,7 +50,7 @@
     cursor: pointer;
     
     /* Color */
-    color: var(--nidsan-blue);
+    color: inherit;
     
     
     /* Animation */

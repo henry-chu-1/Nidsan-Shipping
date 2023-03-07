@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
 import './NavBar.css'
 import './NavBarMobile.css'
+
 import NidsanLogo from '../images/logo_nidsan.js'
 
-const NavBar = () => {
+const NavBar = (props) => {
 
     const showMenu = () => {
         const navBarManuBackground = document.getElementById('nav-bar-menu-background');
@@ -14,37 +17,49 @@ const NavBar = () => {
         navBarManuMobile.className = 'nav-bar-menu-mobile-visible';
     }
 
-    const hideMenu = () => {
+    const hideMenu = (color) => {
         const navBarManuBackground = document.getElementById('nav-bar-menu-background');
         navBarManuBackground.className = 'nav-bar-menu-background-hidden';
         const navBarManuMobile = document.getElementById('nav-bar-menu-mobile');
         navBarManuMobile.className = 'nav-bar-menu-mobile-hidden';
+        if(color != ''){
+            props.setLogoColor(color);
+        }
+    }
+
+    const menuColor = () => {
+        if(props.logoColor == 'white'){
+            return {color: '#FFFFFF'};
+        }
+        else{
+            return {color: '#073C52'};
+        }
     }
 
     return(
         <div id = 'nav-bar'>
-            <Link to= '/' >
-                <NidsanLogo/>
+            <Link to= '/' onClick={() => props.setLogoColor('main')}>
+                <NidsanLogo logoColor = {props.logoColor}/>
             </Link>
-            <nav id = 'nav-bar-menu'>
-                <Link className = 'nav-bar-link' to = '/services'>
+            <nav id = 'nav-bar-menu' style={menuColor()}>
+                <Link  className = 'nav-bar-link' to = '/services' onClick = {() => props.setLogoColor('white')}>
                     Services
                 </Link>
-                <Link className = 'nav-bar-link' to = '/network'>
+                {/* <Link className = 'nav-bar-link' to = '/network'>
                     Network
-                </Link>
+                </Link> */}
             </nav>
             <nav id = 'nav-bar-menu-dropdown'>
-                <p onClick = { showMenu } >Menu ☰</p>
-                <div id = 'nav-bar-menu-background' className = 'nav-bar-menu-background-hidden' onClick = { hideMenu }/>
+                <p onClick = { showMenu } style={menuColor()}>Menu ☰</p>
+                <div id = 'nav-bar-menu-background' className = 'nav-bar-menu-background-hidden' onClick = { () => hideMenu('') }/>
                 <div id = 'nav-bar-menu-mobile' className = 'nav-bar-menu-mobile-hidden'>
                     <nav id = 'nav-bar-menu-options'>
-                        <Link className = 'nav-bar-link' to = '/services' onClick = { hideMenu }>
+                        <Link className = 'nav-bar-link' to = '/services' onClick = { () => hideMenu('white') }>
                             Services
                         </Link>
-                        <Link className = 'nav-bar-link' to = '/network' onClick = { hideMenu }>
+                        {/* <Link className = 'nav-bar-link' to = '/network' onClick = { () => hideMenu('main') }>
                             Network
-                        </Link>
+                        </Link> */}
                     </nav>
                 </div>
             </nav>
