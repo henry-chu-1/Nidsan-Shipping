@@ -26,7 +26,6 @@ const Services = () =>{
                         <p className= 'services-header-paragraph'>Ocean Services</p>
                         <p className= 'services-header-paragraph'>Inland Services</p>
                         <p className= 'services-header-paragraph'>Air Frieght Services</p>
-                    {/* </div> */}
                 </div>
             </div>
         </div>
