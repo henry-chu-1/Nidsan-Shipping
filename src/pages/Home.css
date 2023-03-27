@@ -235,7 +235,6 @@
 
 #home-facebook-logo:hover{
   /* Animation */
-  /* transform: translateX(20%) scale(1.3); */
   transform: scale(2);
   transition-duration: 500ms;
 }

@@ -1,9 +1,10 @@
 import './Services.css'
 import './ServicesMobile.css'
 
-
 import servicesCoverImage from '../images/image_services_cover.png'
-import Footer from '../components/Footer';
+
+import FacebookLogo from '../images/logo_facebook.js';
+import InstagramLogo from '../images/logo_instagram.js';
 
 const Services = () =>{
    
@@ -26,6 +27,14 @@ const Services = () =>{
                         <p className= 'services-header-paragraph'>Ocean Services</p>
                         <p className= 'services-header-paragraph'>Inland Services</p>
                         <p className= 'services-header-paragraph'>Air Frieght Services</p>
+                </div>
+                <div id = 'services-social-logos-grid'>
+                    <a id = 'services-facebook-wrapper' href = 'https://www.facebook.com/nidsanshipping?mibextid=LQQJ4d' target = '_blank' rel = 'noreferrer'>
+                        <FacebookLogo id = 'services-facebook-logo'/>
+                    </a>
+                    <a id = 'services-instagram-wrapper' href = 'https://www.instagram.com/nidsanshipping/' target = '_blank' rel = 'noreferrer'>
+                        <InstagramLogo id = 'services-instagram-logo'/>
+                    </a>
                 </div>
             </div>
         </div>

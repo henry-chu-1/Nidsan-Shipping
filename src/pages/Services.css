@@ -30,7 +30,6 @@
     /* Color */
     background-color: rgba(255,255, 255, 0.5);
 
-
     /* Font */
     text-align: left;
     font-size: var(--nineteen-px);
@@ -61,3 +60,64 @@
     font-size: inherit;
     line-height: inherit;
 }
+
+#services-social-logos-grid{
+    /* Display/Position */
+    display: grid;
+    position: absolute;
+    top: 91.6%;
+    left: 4.2%;
+    gap: 17px;
+  }
+  
+#services-facebook-wrapper{
+    /* Display/Position */
+    display: grid;
+    grid-area: 1/1;
+    align-self: center;
+}
+
+#services-facebook-logo{
+    /* Display/Position */
+    grid-area: 1/1;
+    justify-self: center;
+
+    /* Size */
+    height: var(--social-logo-size);
+    width: var(--social-logo-size);
+
+    /* Animation */
+    transition: transform 350ms ease;
+}
+
+#services-facebook-logo:hover{
+    /* Animation */
+    transform: scale(2);
+    transition-duration: 500ms;
+}
+
+#services-instagram-wrapper{
+    /* Display/Position */
+    display: grid;
+    grid-area: 2/1;
+    align-self: center;
+}
+
+#services-instagram-logo{
+    /* Display/Position */
+    grid-area: 1/1;
+    justify-self: center;
+
+    /* Size */
+    height: var(--social-logo-size);
+    width: var(--social-logo-size);
+
+    /* Animation */
+    transition: transform 350ms ease;
+}
+  
+  #services-instagram-logo:hover{
+    /* Animation */
+    transform: scale(2);
+    transition-duration: 500ms;
+  }

@@ -12,7 +12,19 @@
 }
 
 #services-header-box{
-    
+    /* Display/Position */
+    right: 10vw;
+    top: 15vh;
+    margin: auto;
+
+    /* Size*/
+    width: 80vw; 
+    min-height: 50vh;
+
+    /* Font */
+    text-align: center;
+    font-size: var(--nineteen-px);
+    line-height: var(--twenty-four-px);
 }
 
 #services-header-title{
@@ -22,3 +34,13 @@
 .services-header-paragraph{
     
 }
+
+#services-social-logos-grid{}
+  
+#services-facebook-wrapper{}
+  
+#services-facebook-logo{}
+
+#services-facebook-logo:hover{}
+
+#services-instagram-wrapper{}
