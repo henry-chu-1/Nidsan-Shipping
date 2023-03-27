@@ -366,10 +366,9 @@
   /* Display/Position */
     
   /* Size*/
-    margin: auto;
-    /* margin-top: 4.88vh; */
-    margin-top: calc(50px + 0.1vh);
-    width: 60vw;
+  margin: auto;
+  margin-top: calc(50px + 0.1vh);
+  width: 60vw;
 }
 
 .home-about-title{

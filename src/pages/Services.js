@@ -2,6 +2,10 @@ import './Services.css'
 import './ServicesMobile.css'
 
 import servicesCoverImage from '../images/image_services_cover.png'
+import servicesOceanImage from '../images/image_services_ocean.png'
+import servicesInlandImage from '../images/image_services_inland.png'
+import servicesAirImage from '../images/image_services_air.png'
+
 
 import FacebookLogo from '../images/logo_facebook.js';
 import InstagramLogo from '../images/logo_instagram.js';
@@ -35,6 +39,32 @@ const Services = () =>{
                     <a id = 'services-instagram-wrapper' href = 'https://www.instagram.com/nidsanshipping/' target = '_blank' rel = 'noreferrer'>
                         <InstagramLogo id = 'services-instagram-logo'/>
                     </a>
+                </div>
+            </div>
+            <div id = 'services-body'>
+                <div id = 'services-body-ocean-wrapper'>
+                    <div id = 'services-body-ocean-text-wrapper'>
+                        <p id = 'services-body-ocean-title'>OCEAN SERVICES</p>
+                        <p id = 'services-body-ocean-paragraph'>Learn more about our shipping services from over 000 ports around the world and how we can connect your business globally and simplify your supply chain end-to-end.</p>
+                        <button id = 'services-ocean-read-more-button' className = 'services-read-more-button'>READ MORE</button>
+                    </div>
+                    <img id = 'services-body-ocean-image' src = { servicesOceanImage } ></img>
+                </div>
+                <div id = 'services-body-inland-wrapper'>
+                    <img id = 'services-body-inland-image' src = { servicesInlandImage } ></img>
+                    <div id = 'services-body-inland-text-wrapper'>
+                        <p id = 'services-body-inland-title'>INLAND SERVICES</p>
+                        <p id= 'services-body-inland-paragraph'>Learn more about our shipping services from over 000 ports around the world and how we can connect your business globally and simplify your supply chain end-to-end.</p>
+                        <button id = 'services-body-inland-read-more-button' className = 'services-read-more-button'>READ MORE</button>
+                    </div>
+                </div>
+                <div id = 'services-body-air-wrapper'>
+                    <img id = 'services-body-air-image' src = { servicesAirImage } ></img>
+                    <div id = 'services-body-air-text-wrapper'>
+                        <p id = 'services-body-air-title'>AIR FREIGHT SERVICES</p>
+                        <p id = 'services-body-air-paragraph'>Learn more about our shipping services from over 000 ports around the world and how we can connect your business globally and simplify your supply chain end-to-end.</p>
+                        <button id = 'services-body-air-read-more-button' className = 'services-read-more-button'>READ MORE</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,10 @@
 @media(max-width: 975px){
+    /* CLASSES */
+    .services-read-more-button{
+        font-size: var(--twelve-px);
+    }
 
+    /* OTHER */
     #services-page{
 
     }
@@ -47,4 +52,125 @@
 
     #services-instagram-wrapper{}
 
+    #services-body{}
+    
+    #services-body-ocean-wrapper{
+        /* Display/Position */
+        gap: 3vh;
+    }
+
+    #services-body-ocean-text-wrapper{
+        /* Display/Position */
+        grid-area: 1/1;
+        
+        /* Font */
+        text-align: center;
+        font-size: var(--twelve-px);
+        line-height: var(--sixteen-px);
+    }
+    
+    #services-body-ocean-title{
+        /* Font */
+        font-size: var(--nineteen-px);
+        line-height: var(--twenty-four-px);
+    }
+    
+    #services-body-ocean-paragraph{
+        /* Display/Position */
+        margin-top: 1.5vh;
+    }
+    
+    #services-body-ocean-image{
+        /* Display/Position */
+        grid-area: 2/1;
+        margin: auto;
+
+        /* Size */
+        width: 90vw;
+    }
+    
+    #services-ocean-read-more-button{
+        
+    }
+    
+    #services-body-inland-wrapper{
+        /* Display/Position */
+        gap: 3vh;
+        margin-top: 6vh;
+    }
+    
+    #services-body-inland-image{
+        /* Display/Position */
+        grid-area: 2/1;
+    
+        /* Size */
+        width: 90vw;
+    }
+    
+    #services-body-inland-text-wrapper{
+        /* Display/Position */
+        grid-area: 1/1;
+        
+        /* Font */
+        text-align: center;
+        font-size: var(--sixteen-px);
+        line-height: var(--twenty-four-px);
+    }
+    
+    #services-body-inland-title{
+        /* Font */
+        font-size: var(--thirty-px);
+        line-height: var(--thirty-four-px);
+    }
+    
+    #services-body-inland-paragraph{
+        /* Display/Position */
+        margin-top: 1.5vh;
+    }
+    
+    #services-body-inland-read-more-button{
+    
+    }
+    
+    #services-body-air-wrapper{
+        /* Display/Position */
+        gap: 3vh;
+        margin-top: 6vh;
+        
+        /* Size */
+        width: 90vw;
+    }
+
+    #services-body-air-text-wrapper{
+        /* Display/Position */
+        grid-area: 1/1;
+        
+        /* Font */
+        text-align: center;
+        font-size: var(--sixteen-px);
+        line-height: var(--twenty-four-px);
+    }
+    
+    #services-body-air-title{
+         /* Font */
+         font-size: var(--thirty-px);
+         line-height: var(--thirty-four-px);
+    }
+    
+    #services-body-air-paragraph{
+        /* Display/Position */
+        margin-top: 1.5vh;
+    }
+    
+    #services-body-air-read-more-button{
+    
+    }
+    
+    #services-body-air-image{
+        /* Display/Position */
+        grid-area: 2/1;
+    
+        /* Size */
+        width: 90vw;
+    }
 }
